@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelView\bin\Debug\ModelView.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelView\bin\Debug\ModelView.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelView\bin\Debug\Funq.Portable.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelView\bin\Debug\Storm.Mvvm.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelView\obj\Debug\ModelViewTodo.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelView\obj\Debug\ModelView.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelView\obj\Debug\ModelView.pdb
