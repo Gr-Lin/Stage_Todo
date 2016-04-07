@@ -3,16 +3,18 @@ using Android.OS;
 using Storm.Mvvm;
 using ModelViewTodo.ModelView;
 
-
-[Activity(Label = "Home", MainLauncher = true, Icon = "@drawable/icon")]
-public partial class DisplayActivity : ActivityBase
+namespace TodoList.Activities
 {
-    protected override void OnCreate(Bundle savedInstanceState)
+    [Activity(Label = "TodoList", MainLauncher = true, Icon = "@drawable/icon")]
+    public partial class DisplayActivity : ActivityBase
     {
-        base.OnCreate(savedInstanceState);
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
 
-        SetContentView(Resources.Layout.Home);
+            SetContentView(Resource.Layout.Home);
 
-        SetViewModel(new DisplayModelView());
+            SetViewModel(new DisplayModelView());
+        }
     }
 }

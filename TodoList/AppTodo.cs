@@ -3,6 +3,10 @@ using Android.App;
 using Android.Runtime;
 using Storm.Mvvm;
 using Storm.Mvvm.Inject;
+using System.Collections.Generic;
+using TodoList.Activities;
+using ModelViewTodo;
+
 
 [Application]
 public class AppTodo : ApplicationBase
@@ -14,6 +18,15 @@ public class AppTodo : ApplicationBase
     public override void OnCreate()
     {
         base.OnCreate();
-        AndroidContainer.CreateInstance<AndroidContainer>(this, null);
+
+        Dictionary<string, Type> views = new Dictionary<string, Type>
+        {
+            { "Home", typeof(DisplayActivity)},
+            { "Add", typeof(AddActivity)}
+        };
+
+
+        AndroidContainer.CreateInstance<AndroidContainer>(this, views);
+       // AndroidContainer.GetInstance().RegisterInstance<>(new TodoCollection());
     }
 }

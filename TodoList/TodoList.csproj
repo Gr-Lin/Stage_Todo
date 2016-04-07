@@ -92,14 +92,16 @@
     <Folder Include="Resources\layout\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\AddView.xml" />
+    <Content Include="Views\AddView.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\HomeView.xml">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ModelView\ModelViewTodo.csproj">
-      <Project>{9447cf95-e505-4dca-80a2-fd66c2466c46}</Project>
+    <ProjectReference Include="..\ModelViewTodo\ModelViewTodo.csproj">
+      <Project>{b2d8f17f-31a7-4f6e-be69-9aa0f4e6291a}</Project>
       <Name>ModelViewTodo</Name>
     </ProjectReference>
   </ItemGroup>

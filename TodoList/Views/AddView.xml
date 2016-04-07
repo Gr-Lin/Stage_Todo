@@ -11,16 +11,19 @@
     android:id="name"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:hint="Title..."/>
+    android:hint="Title..."
+    Text="{Binding Title}"/>
   <EditText
     android:id="descitption"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:hint="Description..."/>
+    android:hint="Description..."
+    Text="{Binding Description}"/>
   <Button
     android:id="save"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Save Todo"/>  
+    android:text="Save Todo"
+    Click="{Binding ButtonSave}"/>
 </LinearLayout> 
 

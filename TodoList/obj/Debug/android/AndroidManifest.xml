@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="TodoList.TodoList" android:versionCode="1" android:versionName="1.0">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="TodoList" android:name="md54c43899c74094d36456dd85c7d3656fc.AppTodo" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+    <activity android:icon="@drawable/icon" android:label="Add" android:name="md59f97345651ed990774be3c128537c270.AddActivity" />
+    <activity android:icon="@drawable/icon" android:label="Home" android:name="md59f97345651ed990774be3c128537c270.DisplayActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="TodoList.TodoList.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.TodoList.TodoList" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

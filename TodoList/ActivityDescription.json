@@ -1,11 +1,5 @@
 ﻿{
-	"namespaces": ["TodoList"],
-		
-	// With this property, you can add some resource file to global scope in order to use them from any other view (even between them)
-/*	"globalResourceFiles": [
-		"Styles/ButtonStyles.xml",
-		"Styles/TextViewStyles.xml"
-	],*/
+  "namespaces": [ "TodoList" ],
 
   "fileDescriptions": [
     {
@@ -17,8 +11,29 @@
         "inputFile": "Views/HomeView.xml",
         "outputFile": "Home.axml"
       }
+    },
+   {
+      "activity": {
+        "className": "AddActivity",
+        "namespaceName": "TodoList.Activities"
+      },
+      "view": {
+        "inputFile": "Views/AddView.xml",
+        "outputFile": "Add.axml"
+      }
     }
   ]
+}
+
+
+
+  // With this property, you can add some resource file to global scope in order to use them from any other view (even between them)
+  /*	"globalResourceFiles": [
+		"Styles/ButtonStyles.xml",
+		"Styles/TextViewStyles.xml"
+	],*/
+
+
   /*{
 			// if you have a fragment and not an activity, use the fragment property instead.
 			"fragment": {
@@ -56,4 +71,3 @@
 
 	// You can enable or not the case sensitivity in android view file. Disabling it provide immediate compatibility with native Android view but decrease (slightly) the performance.
 	"caseSensitivity": false*/
-}

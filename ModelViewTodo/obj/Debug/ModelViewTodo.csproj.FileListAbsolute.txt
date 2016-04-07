@@ -1,0 +1,14 @@
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelViewTodo\bin\Debug\ModelViewTodo.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelViewTodo\bin\Debug\ModelViewTodo.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelViewTodo\bin\Debug\Funq.Portable.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelViewTodo\bin\Debug\Storm.Mvvm.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelViewTodo\obj\Debug\ModelViewTodo.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelViewTodo\obj\Debug\ModelViewTodo.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelViewTodo\obj\Debug\ModelViewTodo.dll.mdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelViewTodo\bin\Debug\ModelViewTodo.dll.mdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelViewTodo\obj\Debug\ModelViewTodo.dll.mdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\ModelViewTodo\bin\Debug\ModelViewTodo.dll.mdb
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\ModelViewTodo\obj\Debug\ModelViewTodo.dll.mdb
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\ModelViewTodo\bin\Debug\ModelViewTodo.dll.mdb
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\ModelViewTodo\obj\Debug\ModelViewTodo.dll.mdb
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\ModelViewTodo\bin\Debug\ModelViewTodo.dll.mdb

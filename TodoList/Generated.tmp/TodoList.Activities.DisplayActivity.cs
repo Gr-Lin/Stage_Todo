@@ -28,23 +28,23 @@ namespace TodoList.Activities
 	public partial class DisplayActivity
 	{
 		
-		private ListView _generated_field_20;
+		private ListView _generated_field_24;
 		
-		private RelativeLayout _generated_field_21;
+		private RelativeLayout _generated_field_25;
 		
-		private Button _generated_field_22;
+		private Button _generated_field_26;
 		
-		private ILocalizationService _generated_field_23;
+		private ILocalizationService _generated_field_27;
 		
 		protected ListView listView
 		{
 			get
 			{
-				if ((this._generated_field_20 == null))
+				if ((this._generated_field_24 == null))
 				{
-					this._generated_field_20 = this.FindViewById<ListView>(Resource.Id.listView);
+					this._generated_field_24 = this.FindViewById<ListView>(Resource.Id.listView);
 				}
-				return this._generated_field_20;
+				return this._generated_field_24;
 			}
 		}
 		
@@ -52,11 +52,11 @@ namespace TodoList.Activities
 		{
 			get
 			{
-				if ((this._generated_field_21 == null))
+				if ((this._generated_field_25 == null))
 				{
-					this._generated_field_21 = this.FindViewById<RelativeLayout>(Resource.Id.InnerRelativeLayout);
+					this._generated_field_25 = this.FindViewById<RelativeLayout>(Resource.Id.InnerRelativeLayout);
 				}
-				return this._generated_field_21;
+				return this._generated_field_25;
 			}
 		}
 		
@@ -64,11 +64,11 @@ namespace TodoList.Activities
 		{
 			get
 			{
-				if ((this._generated_field_22 == null))
+				if ((this._generated_field_26 == null))
 				{
-					this._generated_field_22 = this.FindViewById<Button>(Resource.Id.add);
+					this._generated_field_26 = this.FindViewById<Button>(Resource.Id.add);
 				}
-				return this._generated_field_22;
+				return this._generated_field_26;
 			}
 		}
 		
@@ -76,11 +76,11 @@ namespace TodoList.Activities
 		{
 			get
 			{
-				if ((this._generated_field_23 == null))
+				if ((this._generated_field_27 == null))
 				{
-					this._generated_field_23 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_27 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_23;
+				return this._generated_field_27;
 			}
 		}
 		
@@ -102,6 +102,10 @@ namespace TodoList.Activities
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
+			BindingObject generated_bindingObject_3 = new BindingObject(this.add);
+			result.Add(generated_bindingObject_3);
+			BindingExpression generated_bindingExpression_3 = new BindingExpression("Click", "ButtonAdd");
+			generated_bindingObject_3.AddExpression(generated_bindingExpression_3);
 			return result;
 		}
 	}
