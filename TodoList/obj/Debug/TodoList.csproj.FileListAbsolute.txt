@@ -18,6 +18,7 @@ C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\TodoList\obj\Debug
 C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\TodoList\obj\Debug\res\layout\add.xml
 C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\TodoList\obj\Debug\R.cs.flag
 C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\TodoList\obj\Debug\uploadflags.txt
-C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\TodoList\bin\Debug\ModelViewTodo.dll.mdb
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\obj\Debug\res\layout\home_dt_listviewtemplate.xml
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\ModelViewTodo.dll.mdb
 C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\obj\Debug\TodoList.dll.mdb
 C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\TodoList.dll.mdb

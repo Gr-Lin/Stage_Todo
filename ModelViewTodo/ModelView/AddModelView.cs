@@ -16,7 +16,7 @@ namespace ModelViewTodo.ModelView
         private string _descritpion;
 
         [NavigationParameter]
-        public string List { get; set; }
+        public ObservableCollection<Todo> List { get; set; }
 
         public ICommand ButtonSave { get; private set; }
 
@@ -35,19 +35,17 @@ namespace ModelViewTodo.ModelView
         public override void OnNavigatedTo(NavigationArgs e, string parametersKey)
         {
             base.OnNavigatedTo(e, parametersKey);
-            //?
         }
 
         public AddModelView()
         {
             ButtonSave = new DelegateCommand(ButtonClicked);
-           
         }
 
 
         private void ButtonClicked()
         {
-            //(new Todo(Title, Desciption));
+            List.Add(new Todo(Title, Description));
             NavigationService.GoBack();
         }
     }

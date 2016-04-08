@@ -1,26 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
 
-  <ListView
-      android:id="listView"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"/>
+  <Resources>
+    <DataTemplate Key="ListViewTemplate">
+      <LinearLayout android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-  <RelativeLayout
-        android:id="InnerRelativeLayout"
-        android:layout_width="wrap_content"
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  Text="{Binding Name}"
+                            />
+      </LinearLayout>
+    </DataTemplate>
+  </Resources>
+
+  <TextView android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" >
-    <Button
-      android:id="add"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Add Todo"
-      Click="{Binding ButtonAdd}"/>
+        android:text="Todos"
+        android:gravity="center"
+            />
 
-  </RelativeLayout>
+  <BindableListView android:id="ListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    adapter="{Binding CollectionTodo, Template={Resource ListViewTemplate}}" />      
 
-</RelativeLayout>
+  <Button android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Add a Todo"
+          Click="{Binding ButtonAdd}"
+              />
+
+</LinearLayout>
+

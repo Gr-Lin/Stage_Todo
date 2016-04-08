@@ -14,16 +14,17 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int InnerRelativeLayout=0x7f050004;
-        public static final int add=0x7f050005;
+        public static final int Generated_ViewElement_2=0x7f050004;
+        public static final int Generated_ViewElement_3=0x7f050005;
+        public static final int ListView=0x7f050003;
         public static final int descitption=0x7f050001;
-        public static final int listView=0x7f050003;
         public static final int name=0x7f050000;
         public static final int save=0x7f050002;
     }
     public static final class layout {
         public static final int add=0x7f030000;
         public static final int home=0x7f030001;
+        public static final int home_dt_listviewtemplate=0x7f030002;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040001;

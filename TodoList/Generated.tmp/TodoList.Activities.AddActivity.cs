@@ -28,23 +28,23 @@ namespace TodoList.Activities
 	public partial class AddActivity
 	{
 		
-		private EditText _generated_field_28;
+		private EditText _generated_field_20;
 		
-		private EditText _generated_field_29;
+		private EditText _generated_field_21;
 		
-		private Button _generated_field_30;
+		private Button _generated_field_22;
 		
-		private ILocalizationService _generated_field_31;
+		private ILocalizationService _generated_field_23;
 		
 		protected EditText name
 		{
 			get
 			{
-				if ((this._generated_field_28 == null))
+				if ((this._generated_field_20 == null))
 				{
-					this._generated_field_28 = this.FindViewById<EditText>(Resource.Id.name);
+					this._generated_field_20 = this.FindViewById<EditText>(Resource.Id.name);
 				}
-				return this._generated_field_28;
+				return this._generated_field_20;
 			}
 		}
 		
@@ -52,11 +52,11 @@ namespace TodoList.Activities
 		{
 			get
 			{
-				if ((this._generated_field_29 == null))
+				if ((this._generated_field_21 == null))
 				{
-					this._generated_field_29 = this.FindViewById<EditText>(Resource.Id.descitption);
+					this._generated_field_21 = this.FindViewById<EditText>(Resource.Id.descitption);
 				}
-				return this._generated_field_29;
+				return this._generated_field_21;
 			}
 		}
 		
@@ -64,11 +64,11 @@ namespace TodoList.Activities
 		{
 			get
 			{
-				if ((this._generated_field_30 == null))
+				if ((this._generated_field_22 == null))
 				{
-					this._generated_field_30 = this.FindViewById<Button>(Resource.Id.save);
+					this._generated_field_22 = this.FindViewById<Button>(Resource.Id.save);
 				}
-				return this._generated_field_30;
+				return this._generated_field_22;
 			}
 		}
 		
@@ -76,11 +76,11 @@ namespace TodoList.Activities
 		{
 			get
 			{
-				if ((this._generated_field_31 == null))
+				if ((this._generated_field_23 == null))
 				{
-					this._generated_field_31 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_23 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_31;
+				return this._generated_field_23;
 			}
 		}
 		
@@ -102,6 +102,18 @@ namespace TodoList.Activities
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
+			BindingObject generated_bindingObject_9 = new BindingObject(this.name);
+			result.Add(generated_bindingObject_9);
+			BindingExpression generated_bindingExpression_9 = new BindingExpression("Text", "Title");
+			generated_bindingObject_9.AddExpression(generated_bindingExpression_9);
+			BindingObject generated_bindingObject_10 = new BindingObject(this.descitption);
+			result.Add(generated_bindingObject_10);
+			BindingExpression generated_bindingExpression_10 = new BindingExpression("Text", "Description");
+			generated_bindingObject_10.AddExpression(generated_bindingExpression_10);
+			BindingObject generated_bindingObject_11 = new BindingObject(this.save);
+			result.Add(generated_bindingObject_11);
+			BindingExpression generated_bindingExpression_11 = new BindingExpression("Click", "ButtonSave");
+			generated_bindingObject_11.AddExpression(generated_bindingExpression_11);
 			return result;
 		}
 	}

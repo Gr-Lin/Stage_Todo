@@ -27,6 +27,5 @@ public class AppTodo : ApplicationBase
 
 
         AndroidContainer.CreateInstance<AndroidContainer>(this, views);
-       // AndroidContainer.GetInstance().RegisterInstance<>(new TodoCollection());
     }
 }
