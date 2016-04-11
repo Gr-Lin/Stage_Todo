@@ -54,7 +54,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Storm.Mvvm.Android.Support, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Storm.Mvvm.Android.Support.1.2.20\lib\MonoAndroid22\Storm.Mvvm.Android.Support.dll</HintPath>
+      <HintPath>..\packages\Storm.Mvvm.Android.Support.1.2.21\lib\MonoAndroid22\Storm.Mvvm.Android.Support.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -69,6 +69,7 @@
   <ItemGroup>
     <Compile Include="Activities\AddActivity.cs" />
     <Compile Include="Activities\DisplayActivity.cs" />
+    <Compile Include="Activities\HomeActivity.cs" />
     <Compile Include="AppTodo.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,6 +96,7 @@
     <Content Include="Views\AddView.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Views\DisplayView.xml" />
     <Content Include="Views\HomeView.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -106,12 +108,12 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
-  <Import Project="..\packages\Storm.Mvvm.Android.Support.1.2.20\build\Storm.Mvvm.Android.Support.targets" Condition="Exists('..\packages\Storm.Mvvm.Android.Support.1.2.20\build\Storm.Mvvm.Android.Support.targets')" />
+  <Import Project="..\packages\Storm.Mvvm.Android.Support.1.2.21\build\Storm.Mvvm.Android.Support.targets" Condition="Exists('..\packages\Storm.Mvvm.Android.Support.1.2.21\build\Storm.Mvvm.Android.Support.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Storm.Mvvm.Android.Support.1.2.20\build\Storm.Mvvm.Android.Support.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Storm.Mvvm.Android.Support.1.2.20\build\Storm.Mvvm.Android.Support.targets'))" />
+    <Error Condition="!Exists('..\packages\Storm.Mvvm.Android.Support.1.2.21\build\Storm.Mvvm.Android.Support.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Storm.Mvvm.Android.Support.1.2.21\build\Storm.Mvvm.Android.Support.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.

@@ -28,33 +28,19 @@ namespace Storm.Generated
 	public class Generated_ViewHolder_2 : Storm.Mvvm.BaseViewHolder
 	{
 		
-		private TextView _generated_field_26;
+		private TextView _generated_field_34;
 		
-		private TextView _generated_field_27;
-		
-		private ILocalizationService _generated_field_28;
-		
-		protected TextView Generated_ViewElement_7
-		{
-			get
-			{
-				if ((this._generated_field_26 == null))
-				{
-					this._generated_field_26 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_7);
-				}
-				return this._generated_field_26;
-			}
-		}
+		private ILocalizationService _generated_field_35;
 		
 		protected TextView Generated_ViewElement_8
 		{
 			get
 			{
-				if ((this._generated_field_27 == null))
+				if ((this._generated_field_34 == null))
 				{
-					this._generated_field_27 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_8);
+					this._generated_field_34 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_8);
 				}
-				return this._generated_field_27;
+				return this._generated_field_34;
 			}
 		}
 		
@@ -62,11 +48,11 @@ namespace Storm.Generated
 		{
 			get
 			{
-				if ((this._generated_field_28 == null))
+				if ((this._generated_field_35 == null))
 				{
-					this._generated_field_28 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_35 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_28;
+				return this._generated_field_35;
 			}
 		}
 		
@@ -88,14 +74,10 @@ namespace Storm.Generated
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
-			BindingObject generated_bindingObject_14 = new BindingObject(this.Generated_ViewElement_7);
-			result.Add(generated_bindingObject_14);
-			BindingExpression generated_bindingExpression_14 = new BindingExpression("Text", "Name");
-			generated_bindingObject_14.AddExpression(generated_bindingExpression_14);
-			BindingObject generated_bindingObject_15 = new BindingObject(this.Generated_ViewElement_8);
-			result.Add(generated_bindingObject_15);
-			BindingExpression generated_bindingExpression_15 = new BindingExpression("Text", "Description");
-			generated_bindingObject_15.AddExpression(generated_bindingExpression_15);
+			BindingObject generated_bindingObject_22 = new BindingObject(this.Generated_ViewElement_8);
+			result.Add(generated_bindingObject_22);
+			BindingExpression generated_bindingExpression_26 = new BindingExpression("Text", "Name");
+			generated_bindingObject_22.AddExpression(generated_bindingExpression_26);
 			return result;
 		}
 	}

@@ -1,11 +1,7 @@
 ﻿
 using Storm.Mvvm;
 using Storm.Mvvm.Commands;
-using Storm.Mvvm.Navigation;
-using System.Collections.ObjectModel;
 using System.Windows.Input;
-using Storm.Mvvm.Services;
-using ModelViewTodo.Model;
 using Storm.Mvvm.Inject;
 using ModelViewTodo.Interfaces;
 

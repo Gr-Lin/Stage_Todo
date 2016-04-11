@@ -5,8 +5,8 @@ using Storm.Mvvm;
 using Storm.Mvvm.Inject;
 using System.Collections.Generic;
 using TodoList.Activities;
-using ModelViewTodo;
-
+using ModelViewTodo.Interfaces;
+using ModelViewTodo.Services;
 
 [Application]
 public class AppTodo : ApplicationBase
@@ -21,11 +21,13 @@ public class AppTodo : ApplicationBase
 
         Dictionary<string, Type> views = new Dictionary<string, Type>
         {
-            { "Home", typeof(DisplayActivity)},
-            { "Add", typeof(AddActivity)}
+            { "Home", typeof(HomeActivity)},
+            { "Add", typeof(AddActivity)},
+            { "Disp", typeof(DisplayActivity) }
         };
 
 
         AndroidContainer.CreateInstance<AndroidContainer>(this, views);
+        AndroidContainer.GetInstance().RegisterInstance<ICollectionTodoService>(new CollectionTodoService());
     }
 }

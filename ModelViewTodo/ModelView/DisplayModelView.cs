@@ -1,8 +1,11 @@
-﻿using Storm.Mvvm;
+﻿
+using Storm.Mvvm;
 using Storm.Mvvm.Commands;
 using System.Windows.Input;
-using System.Collections.ObjectModel;
+using Storm.Mvvm.Navigation;
+using Storm.Mvvm.Services;
 using ModelViewTodo.Model;
+using System.Collections.ObjectModel;
 using ModelViewTodo.Interfaces;
 using Storm.Mvvm.Inject;
 
@@ -10,28 +13,50 @@ namespace ModelViewTodo.ModelView
 {
     public class DisplayModelView : ViewModelBase
     {
-        public ICommand ButtonAdd { get; private set; }
+        private string _title;
+        private string _desc;
+        private int _index;
+
+        public ICommand ButtonBack { get; set; }
+
+        [NavigationParameter]
+        public int Index { get; set; }
+
+        public string Title
+        {
+            get { return _title; }
+            set { SetProperty(ref _title, value); }
+        }
+
+        public string Description
+        {
+            get { return _desc; }
+            set { SetProperty(ref _desc, value); }
+        }
 
         public ObservableCollection<Todo> CollectionTodo
         {
             get { return LazyResolver<ICollectionTodoService>.Service.GetCollection(); }
         }
 
+        public override void OnNavigatedTo(NavigationArgs e, string parametersKey)
+        {
+            base.OnNavigatedTo(e, parametersKey);
+            _index = Index;
+            Title = CollectionTodo[_index].Name;
+            Description = CollectionTodo[_index].Description;
+
+        }
 
         public DisplayModelView()
         {
-            CollectionTodo.Add(new Todo("Premiere Tache", "Ceci est un descriptif de tache"));
-            CollectionTodo.Add(new Todo("Deuxieme Tache", "J'essais des trucs"));
-
-            ButtonAdd = new DelegateCommand(ButtonClicked);
+            ButtonBack = new DelegateCommand(ButtonClicked);
         }
+
 
         private void ButtonClicked()
         {
-             NavigationService.Navigate("Add");
+            NavigationService.GoBack();
         }
-
     }
-
-   
 }

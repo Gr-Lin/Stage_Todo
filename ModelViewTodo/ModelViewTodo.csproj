@@ -54,6 +54,7 @@
     <Compile Include="Interfaces\ICollectionTodoService.cs" />
     <Compile Include="ModelView\AddModelView.cs" />
     <Compile Include="ModelView\DisplayModelView.cs" />
+    <Compile Include="ModelView\HomeModelView.cs" />
     <Compile Include="Model\Todo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CollectionTodoService.cs" />

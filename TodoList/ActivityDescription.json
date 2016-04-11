@@ -4,7 +4,7 @@
   "fileDescriptions": [
     {
       "activity": {
-        "className": "DisplayActivity",
+        "className": "HomeActivity",
         "namespaceName": "TodoList.Activities"
       },
       "view": {
@@ -12,7 +12,7 @@
         "outputFile": "Home.axml"
       }
     },
-   {
+    {
       "activity": {
         "className": "AddActivity",
         "namespaceName": "TodoList.Activities"
@@ -21,20 +21,30 @@
         "inputFile": "Views/AddView.xml",
         "outputFile": "Add.axml"
       }
+    },
+    {
+      "activity": {
+        "className": "DisplayActivity",
+        "namespaceName": "TodoList.Activities"
+      },
+      "view": {
+        "inputFile": "Views/DisplayView.xml",
+        "outputFile": "Disp.axml"
+      }
     }
   ]
 }
 
 
 
-  // With this property, you can add some resource file to global scope in order to use them from any other view (even between them)
-  /*	"globalResourceFiles": [
+// With this property, you can add some resource file to global scope in order to use them from any other view (even between them)
+/*	"globalResourceFiles": [
 		"Styles/ButtonStyles.xml",
 		"Styles/TextViewStyles.xml"
 	],*/
 
 
-  /*{
+/*{
 			// if you have a fragment and not an activity, use the fragment property instead.
 			"fragment": {
 				// fill the name of your class here
@@ -53,21 +63,5 @@
 			}
 		}
 	],
-	
-	// With classlocation, you can change the default directory where all C# code will be generated
-	"classLocation": "Generated.tmp",
-	// With resourcelocation, you can change the default directory where view files are generated
-	"resourceLocation": "Resource/layout/",
-	// With generatednamespace, you can change the namespace used for all generated class
-	"generatedNamespace": "Storm.Generated",
-	
-	// fields below allow you to change the default Adapter and TemplateSelector to be used if none is provided in a binding expression.
-	// For TemplateSelector, the class should implement ITemplateSelector and have a property of type DataTemplate that you need to provide name in "defaultTemplateSelectorField"
-	// For Adapter, the class should implement IMvvmAdapter and IAdapter and have a property of type ITemplateSelector that you need to provide name in "defaultAdapterField"
-	"defaultTemplateSelector": "Storm.Mvvm.TemplateSelectors.SimpleTemplateSelector",
-	"defaultTemplateSelectorField": "Template",
-	"defaultAdapter": "Storm.Mvvm.BindableAdapter",
-	"defaultAdapterField": "TemplateSelector",
 
-	// You can enable or not the case sensitivity in android view file. Disabling it provide immediate compatibility with native Android view but decrease (slightly) the performance.
-	"caseSensitivity": false*/
+*/

@@ -27,13 +27,18 @@
   <BindableListView android:id="ListView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    adapter="{Binding CollectionTodo, Template={Resource ListViewTemplate}}" />      
+                    adapter="{Binding CollectionTodo, Template={Resource ListViewTemplate}}"
+                    CurrentItem="{Binding SelectedTodo, Mode=TwoWay, UpdateEvent=CurrentItemChanged}"/>      
 
   <Button android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:text="Add a Todo"
           Click="{Binding ButtonAdd}"
               />
+  <Button android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Edit Todo"
+          Click="{Binding ButtonEdit}"/>
 
 </LinearLayout>
 

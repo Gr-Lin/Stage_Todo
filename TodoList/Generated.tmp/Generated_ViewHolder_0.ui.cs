@@ -32,13 +32,13 @@ namespace Storm.Generated
 		
 		private ILocalizationService _generated_field_1;
 		
-		protected TextView Generated_ViewElement_1
+		protected TextView Generated_ViewElement_2
 		{
 			get
 			{
 				if ((this._generated_field_0 == null))
 				{
-					this._generated_field_0 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_1);
+					this._generated_field_0 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_2);
 				}
 				return this._generated_field_0;
 			}
@@ -74,7 +74,7 @@ namespace Storm.Generated
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
-			BindingObject generated_bindingObject_0 = new BindingObject(this.Generated_ViewElement_1);
+			BindingObject generated_bindingObject_0 = new BindingObject(this.Generated_ViewElement_2);
 			result.Add(generated_bindingObject_0);
 			BindingExpression generated_bindingExpression_0 = new BindingExpression("Text", "Name");
 			generated_bindingObject_0.AddExpression(generated_bindingExpression_0);
