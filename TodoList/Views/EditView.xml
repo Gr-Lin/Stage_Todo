@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+  <EditText
+    android:id="nameEdit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="{Binding Title}"
+    Text="{Binding Title, Mode=TwoWay, UpdateEvent=TextChanged}"/>
+  <EditText
+    android:id="descEdit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="{Binding Description}"
+    Text="{Binding Description, Mode=TwoWay, UpdateEvent=TextChanged}"/>
+  
+   <LinearLayout android:orientation="horizontal"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+      <Button android:id="Edit"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Save Change"
+              Click="{Binding ButtonSaveEdit}"/>
+      <Button android:id="Delete"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Delete Todo"
+              Click="{Binding ButtonDelete}"/>
+  </LinearLayout>
+     <Button android:id="back"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Back"
+              Click="{Binding ButtonBack}"/>
+</LinearLayout>
+

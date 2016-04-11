@@ -28,19 +28,19 @@ namespace Storm.Generated
 	public class Generated_ViewHolder_4 : Storm.Mvvm.BaseViewHolder
 	{
 		
-		private TextView _generated_field_68;
+		private TextView _generated_field_73;
 		
-		private ILocalizationService _generated_field_69;
+		private ILocalizationService _generated_field_74;
 		
 		protected TextView Generated_ViewElement_14
 		{
 			get
 			{
-				if ((this._generated_field_68 == null))
+				if ((this._generated_field_73 == null))
 				{
-					this._generated_field_68 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_14);
+					this._generated_field_73 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_14);
 				}
-				return this._generated_field_68;
+				return this._generated_field_73;
 			}
 		}
 		
@@ -48,11 +48,11 @@ namespace Storm.Generated
 		{
 			get
 			{
-				if ((this._generated_field_69 == null))
+				if ((this._generated_field_74 == null))
 				{
-					this._generated_field_69 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_74 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_69;
+				return this._generated_field_74;
 			}
 		}
 		
@@ -74,10 +74,10 @@ namespace Storm.Generated
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
-			BindingObject generated_bindingObject_44 = new BindingObject(this.Generated_ViewElement_14);
-			result.Add(generated_bindingObject_44);
-			BindingExpression generated_bindingExpression_48 = new BindingExpression("Text", "Name");
-			generated_bindingObject_44.AddExpression(generated_bindingExpression_48);
+			BindingObject generated_bindingObject_49 = new BindingObject(this.Generated_ViewElement_14);
+			result.Add(generated_bindingObject_49);
+			BindingExpression generated_bindingExpression_57 = new BindingExpression("Text", "Name");
+			generated_bindingObject_49.AddExpression(generated_bindingExpression_57);
 			return result;
 		}
 	}

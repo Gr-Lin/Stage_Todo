@@ -6,10 +6,10 @@ TodoList.Activities.AddActivity, TodoList;md59f97345651ed990774be3c128537c270.Ad
 TodoList.Activities.AddActivity, TodoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59f97345651ed990774be3c128537c270.AddActivity
 TodoList.Activities.AddActivity;md59f97345651ed990774be3c128537c270.AddActivity
 todolist.activities.AddActivity;md59f97345651ed990774be3c128537c270.AddActivity
-TodoList.Activities.DisplayActivity, TodoList;md59f97345651ed990774be3c128537c270.DisplayActivity
-TodoList.Activities.DisplayActivity, TodoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59f97345651ed990774be3c128537c270.DisplayActivity
-TodoList.Activities.DisplayActivity;md59f97345651ed990774be3c128537c270.DisplayActivity
-todolist.activities.DisplayActivity;md59f97345651ed990774be3c128537c270.DisplayActivity
+TodoList.Activities.EditActivity, TodoList;md59f97345651ed990774be3c128537c270.EditActivity
+TodoList.Activities.EditActivity, TodoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59f97345651ed990774be3c128537c270.EditActivity
+TodoList.Activities.EditActivity;md59f97345651ed990774be3c128537c270.EditActivity
+todolist.activities.EditActivity;md59f97345651ed990774be3c128537c270.EditActivity
 TodoList.Activities.HomeActivity, TodoList;md59f97345651ed990774be3c128537c270.HomeActivity
 TodoList.Activities.HomeActivity, TodoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59f97345651ed990774be3c128537c270.HomeActivity
 TodoList.Activities.HomeActivity;md59f97345651ed990774be3c128537c270.HomeActivity

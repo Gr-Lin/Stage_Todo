@@ -23,7 +23,7 @@ public class AppTodo : ApplicationBase
         {
             { "Home", typeof(HomeActivity)},
             { "Add", typeof(AddActivity)},
-            { "Disp", typeof(DisplayActivity) }
+            { "Disp", typeof(EditActivity) }
         };
 
 

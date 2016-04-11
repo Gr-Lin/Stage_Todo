@@ -6,6 +6,7 @@ using ModelViewTodo.Model;
 using ModelViewTodo.Interfaces;
 using Storm.Mvvm.Inject;
 using System.Collections.Generic;
+using Storm.Mvvm.Services;
 
 namespace ModelViewTodo.ModelView
 {
@@ -30,7 +31,6 @@ namespace ModelViewTodo.ModelView
         {
             CollectionTodo.Add(new Todo("Premiere Tache", "Ceci est un descriptif de tache", 0));
             CollectionTodo.Add(new Todo("Deuxieme Tache", "J'essais des trucs", 1));
-
             CollectionTodo.Add(new Todo ("test", "pk ca s'afficheen double wesh je comprends aps", 2));
 
             ButtonAdd = new DelegateCommand(ButtonAddClicked);
@@ -48,6 +48,13 @@ namespace ModelViewTodo.ModelView
                                          {
                                              {"Index", CollectionTodo.IndexOf(SelectedTodo)}
                                          });
+        }
+
+        public override void OnNavigatedTo(NavigationArgs e, string parametersKey)
+        {
+            base.OnNavigatedTo(e, parametersKey);
+            CollectionTodo.Add(new Todo());
+            CollectionTodo.RemoveAt(CollectionTodo.Count - 1);
         }
 
     }

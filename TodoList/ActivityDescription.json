@@ -24,11 +24,11 @@
     },
     {
       "activity": {
-        "className": "DisplayActivity",
+        "className": "EditActivity",
         "namespaceName": "TodoList.Activities"
       },
       "view": {
-        "inputFile": "Views/DisplayView.xml",
+        "inputFile": "Views/EditView.xml",
         "outputFile": "Disp.axml"
       }
     }

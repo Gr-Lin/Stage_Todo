@@ -22,14 +22,16 @@ namespace ModelViewTodo.Services
             count++;
         }
 
-       /* public void EditCollec(string title, string description, int index)
+        public void EditCollec(string title, string description, int index)
         {
-            foreach (Todo t in _todoCollection)
-                if (t.Index == index)
-                {
-                    t.Name = title;
-                    t.Description = description;
-                }
-        }*/
+            _todoCollection[index].Name = title;
+            _todoCollection[index].Description = description;
+        }
+
+        public void SuppCollec(int i)
+        {
+            _todoCollection.Remove(_todoCollection[i]);
+            count--;
+        }
     }
 }

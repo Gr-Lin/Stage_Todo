@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\AddActivity.cs" />
-    <Compile Include="Activities\DisplayActivity.cs" />
+    <Compile Include="Activities\EditActivity.cs" />
     <Compile Include="Activities\HomeActivity.cs" />
     <Compile Include="AppTodo.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -96,7 +96,9 @@
     <Content Include="Views\AddView.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Views\DisplayView.xml" />
+    <Content Include="Views\EditView.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\HomeView.xml">
       <SubType>Designer</SubType>
     </Content>
