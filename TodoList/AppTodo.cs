@@ -25,7 +25,6 @@ namespace TodoList
             Dictionary<string, Type> views = new Dictionary<string, Type>
             {
                 { "Home", typeof(HomeActivity)},
-                { "Sign", typeof(SignActivity)},
                 { "Add", typeof(AddActivity)},
                 { "Disp", typeof(EditActivity) }
             };

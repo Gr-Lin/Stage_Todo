@@ -26,6 +26,7 @@ namespace TodoList
 		
 		public static void UpdateIdValues()
 		{
+			global::ModernHttpClient.Resource.String.library_name = global::TodoList.Resource.String.library_name;
 			global::PCLCrypto.Resource.String.ApplicationName = global::TodoList.Resource.String.ApplicationName;
 			global::PCLCrypto.Resource.String.Hello = global::TodoList.Resource.String.Hello;
 		}
@@ -124,22 +125,22 @@ namespace TodoList
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Add = 2130903040;
+			public const int add = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Disp = 2130903041;
+			public const int disp = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Home = 2130903042;
+			public const int home = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Home_DT_ListViewTemplate = 2130903043;
+			public const int home_dt_listviewtemplate = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int Log = 2130903044;
+			public const int log = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int Sign = 2130903045;
+			public const int sign = 2130903045;
 			
 			static Layout()
 			{

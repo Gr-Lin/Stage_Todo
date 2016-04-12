@@ -34,12 +34,13 @@ namespace ModelViewTodo.ModelView
 
         private void ButtonLogClicked()
         {
+            //verification de l'user
             NavigationService.Navigate("Home");
         }
 
         private void ButtonSignClicked()
         {
-            NavigationService.Navigate("Sign");
+            //demande l'enregistrent
         }
     }
 }
