@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Net.Http;
+using System.Threading.Tasks;
 using ModelViewTodo.Interfaces;
 
 namespace ModelViewTodo.Services
@@ -10,7 +11,7 @@ namespace ModelViewTodo.Services
         private const string Login = "/login";
         private readonly HttpClient _client = new HttpClient();
 
-        public bool Connexion(string log, string pwd)
+        public async Task<bool> ConnexionAsync(string log, string pwd)
         {
             IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>()
             {
@@ -19,8 +20,13 @@ namespace ModelViewTodo.Services
             };
             HttpContent content = new FormUrlEncodedContent(tab);
 
-            var ret = _client.PostAsync(Url+Login, content);
-            return true;
+            var result = await _client.PostAsync(Url+Login, content);
+
+            //var resultContent = await result.Content.ReadAsStringAsync();
+
+            //JSon.JsonConvert.DeserializeObject<object final>
+
+            return true;//retourner la valeur de ok 
         }
     }
 }

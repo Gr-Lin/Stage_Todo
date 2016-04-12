@@ -1,8 +1,10 @@
-﻿namespace ModelViewTodo.Interfaces
+﻿using System.Threading.Tasks;
+
+namespace ModelViewTodo.Interfaces
 {
     public interface IHttpService
     {
-        bool Connexion(string i, string p);
+        Task<bool> ConnexionAsync(string i, string p);
         //connection
         //enregistrement
     }
