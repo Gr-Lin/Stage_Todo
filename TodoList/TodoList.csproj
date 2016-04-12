@@ -47,10 +47,18 @@
       <HintPath>..\packages\Funq.Portable.1.0.1\lib\Funq.Portable.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="ModernHttpClient, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\modernhttpclient.2.4.2\lib\MonoAndroid\ModernHttpClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OkHttp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\modernhttpclient.2.4.2\lib\MonoAndroid\OkHttp.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="PCLCrypto, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d4421c8a4786956c, processorArchitecture=MSIL">
@@ -108,7 +116,6 @@
     <Compile Include="Activities\EditActivity.cs" />
     <Compile Include="Activities\HomeActivity.cs" />
     <Compile Include="Activities\LoginActivity.cs" />
-    <Compile Include="Activities\SignActivity.cs" />
     <Compile Include="AppTodo.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="Dialogs\DeleteDialog.cs" />
@@ -144,7 +151,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\LoginView.xml" />
-    <Content Include="Views\SignUpView.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ModelViewTodo\ModelViewTodo.csproj">

@@ -16,20 +16,20 @@ public final class R {
     public static final class id {
         public static final int Delete=0x7f050006;
         public static final int Edit=0x7f050005;
-        public static final int Generated_ViewElement_30=0x7f050009;
-        public static final int Generated_ViewElement_31=0x7f05000a;
-        public static final int Generated_ViewElement_32=0x7f05000b;
+        public static final int Generated_ViewElement_78=0x7f05000c;
+        public static final int Generated_ViewElement_79=0x7f05000d;
+        public static final int Generated_ViewElement_80=0x7f05000e;
+        public static final int Generated_ViewElement_81=0x7f05000f;
+        public static final int Generated_ViewElement_82=0x7f050009;
+        public static final int Generated_ViewElement_83=0x7f05000a;
+        public static final int Generated_ViewElement_84=0x7f05000b;
         public static final int ListView=0x7f050008;
         public static final int back=0x7f050007;
         public static final int descEdit=0x7f050004;
         public static final int descitption=0x7f050001;
-        public static final int id=0x7f05000c;
-        public static final int log=0x7f05000e;
         public static final int name=0x7f050000;
         public static final int nameEdit=0x7f050003;
-        public static final int pwd=0x7f05000d;
         public static final int save=0x7f050002;
-        public static final int signup=0x7f05000f;
     }
     public static final class layout {
         public static final int add=0x7f030000;
@@ -37,10 +37,10 @@ public final class R {
         public static final int home=0x7f030002;
         public static final int home_dt_listviewtemplate=0x7f030003;
         public static final int log=0x7f030004;
-        public static final int sign=0x7f030005;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040001;
         public static final int Hello=0x7f040000;
+        public static final int library_name=0x7f040002;
     }
 }

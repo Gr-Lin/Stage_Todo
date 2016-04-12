@@ -69,14 +69,26 @@ namespace TodoList
 			// aapt resource value: 0x7f050005
 			public const int Edit = 2131034117;
 			
+			// aapt resource value: 0x7f05000c
+			public const int Generated_ViewElement_78 = 2131034124;
+			
+			// aapt resource value: 0x7f05000d
+			public const int Generated_ViewElement_79 = 2131034125;
+			
+			// aapt resource value: 0x7f05000e
+			public const int Generated_ViewElement_80 = 2131034126;
+			
+			// aapt resource value: 0x7f05000f
+			public const int Generated_ViewElement_81 = 2131034127;
+			
 			// aapt resource value: 0x7f050009
-			public const int Generated_ViewElement_30 = 2131034121;
+			public const int Generated_ViewElement_82 = 2131034121;
 			
 			// aapt resource value: 0x7f05000a
-			public const int Generated_ViewElement_31 = 2131034122;
+			public const int Generated_ViewElement_83 = 2131034122;
 			
 			// aapt resource value: 0x7f05000b
-			public const int Generated_ViewElement_32 = 2131034123;
+			public const int Generated_ViewElement_84 = 2131034123;
 			
 			// aapt resource value: 0x7f050008
 			public const int ListView = 2131034120;
@@ -90,26 +102,14 @@ namespace TodoList
 			// aapt resource value: 0x7f050001
 			public const int descitption = 2131034113;
 			
-			// aapt resource value: 0x7f05000c
-			public const int id = 2131034124;
-			
-			// aapt resource value: 0x7f05000e
-			public const int log = 2131034126;
-			
 			// aapt resource value: 0x7f050000
 			public const int name = 2131034112;
 			
 			// aapt resource value: 0x7f050003
 			public const int nameEdit = 2131034115;
 			
-			// aapt resource value: 0x7f05000d
-			public const int pwd = 2131034125;
-			
 			// aapt resource value: 0x7f050002
 			public const int save = 2131034114;
-			
-			// aapt resource value: 0x7f05000f
-			public const int signup = 2131034127;
 			
 			static Id()
 			{
@@ -125,22 +125,19 @@ namespace TodoList
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int add = 2130903040;
+			public const int Add = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int disp = 2130903041;
+			public const int Disp = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int home = 2130903042;
+			public const int Home = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int home_dt_listviewtemplate = 2130903043;
+			public const int Home_DT_ListViewTemplate = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int log = 2130903044;
-			
-			// aapt resource value: 0x7f030005
-			public const int sign = 2130903045;
+			public const int Log = 2130903044;
 			
 			static Layout()
 			{
@@ -160,6 +157,9 @@ namespace TodoList
 			
 			// aapt resource value: 0x7f040000
 			public const int Hello = 2130968576;
+			
+			// aapt resource value: 0x7f040002
+			public const int library_name = 2130968578;
 			
 			static String()
 			{

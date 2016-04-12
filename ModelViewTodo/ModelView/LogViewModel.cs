@@ -1,6 +1,8 @@
 ﻿using Storm.Mvvm;
 using Storm.Mvvm.Commands;
 using System.Windows.Input;
+using ModelViewTodo.Interfaces;
+using Storm.Mvvm.Inject;
 
 namespace ModelViewTodo.ModelView
 {
@@ -34,8 +36,7 @@ namespace ModelViewTodo.ModelView
 
         private void ButtonLogClicked()
         {
-            //verification de l'user
-            NavigationService.Navigate("Home");
+            LazyResolver<IHttpService>.Service.Connexion(Id, Pass);
         }
 
         private void ButtonSignClicked()

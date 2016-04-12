@@ -74,10 +74,10 @@ namespace Storm.Generated
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
-			BindingObject generated_bindingObject_0 = new BindingObject(this.Generated_ViewElement_2);
-			result.Add(generated_bindingObject_0);
-			BindingExpression generated_bindingExpression_0 = new BindingExpression("Text", "Name");
-			generated_bindingObject_0.AddExpression(generated_bindingExpression_0);
+			BindingObject generated_bindingObject_4 = new BindingObject(this.Generated_ViewElement_2);
+			result.Add(generated_bindingObject_4);
+			BindingExpression generated_bindingExpression_4 = new BindingExpression("Text", "Name");
+			generated_bindingObject_4.AddExpression(generated_bindingExpression_4);
 			return result;
 		}
 	}

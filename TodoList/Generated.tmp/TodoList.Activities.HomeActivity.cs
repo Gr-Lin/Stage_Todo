@@ -28,53 +28,53 @@ namespace TodoList.Activities
 	public partial class HomeActivity
 	{
 		
-		private Storm.Mvvm.Components.BindableListView _generated_field_243;
+		private Storm.Mvvm.Components.BindableListView _generated_field_343;
 		
-		private Button _generated_field_244;
+		private Button _generated_field_344;
 		
-		private Button _generated_field_245;
+		private Button _generated_field_345;
 		
-		private ILocalizationService _generated_field_246;
+		private ILocalizationService _generated_field_346;
 		
-		private Storm.Mvvm.DataTemplate _generated_field_247;
+		private Storm.Mvvm.DataTemplate _generated_field_347;
 		
-		private Storm.Mvvm.TemplateSelectors.SimpleTemplateSelector _generated_field_248;
+		private Storm.Mvvm.TemplateSelectors.SimpleTemplateSelector _generated_field_348;
 		
-		private Storm.Mvvm.Adapters.BindableAdapter _generated_field_249;
+		private Storm.Mvvm.Adapters.BindableAdapter _generated_field_349;
 		
 		protected Storm.Mvvm.Components.BindableListView ListView
 		{
 			get
 			{
-				if ((this._generated_field_243 == null))
+				if ((this._generated_field_343 == null))
 				{
-					this._generated_field_243 = this.FindViewById<Storm.Mvvm.Components.BindableListView>(Resource.Id.ListView);
+					this._generated_field_343 = this.FindViewById<Storm.Mvvm.Components.BindableListView>(Resource.Id.ListView);
 				}
-				return this._generated_field_243;
+				return this._generated_field_343;
 			}
 		}
 		
-		protected Button Generated_ViewElement_30
+		protected Button Generated_ViewElement_82
 		{
 			get
 			{
-				if ((this._generated_field_244 == null))
+				if ((this._generated_field_344 == null))
 				{
-					this._generated_field_244 = this.FindViewById<Button>(Resource.Id.Generated_ViewElement_30);
+					this._generated_field_344 = this.FindViewById<Button>(Resource.Id.Generated_ViewElement_82);
 				}
-				return this._generated_field_244;
+				return this._generated_field_344;
 			}
 		}
 		
-		protected Button Generated_ViewElement_31
+		protected Button Generated_ViewElement_83
 		{
 			get
 			{
-				if ((this._generated_field_245 == null))
+				if ((this._generated_field_345 == null))
 				{
-					this._generated_field_245 = this.FindViewById<Button>(Resource.Id.Generated_ViewElement_31);
+					this._generated_field_345 = this.FindViewById<Button>(Resource.Id.Generated_ViewElement_83);
 				}
-				return this._generated_field_245;
+				return this._generated_field_345;
 			}
 		}
 		
@@ -82,50 +82,50 @@ namespace TodoList.Activities
 		{
 			get
 			{
-				if ((this._generated_field_246 == null))
+				if ((this._generated_field_346 == null))
 				{
-					this._generated_field_246 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_346 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_246;
+				return this._generated_field_346;
 			}
 		}
 		
-		protected Storm.Mvvm.DataTemplate Generated_Resource_41
+		protected Storm.Mvvm.DataTemplate Generated_Resource_57
 		{
 			get
 			{
-				if ((this._generated_field_247 == null))
+				if ((this._generated_field_347 == null))
 				{
-					this._generated_field_247 = new Storm.Mvvm.DataTemplate();
-					this._generated_field_247.ViewId = Resource.Layout.Home_DT_ListViewTemplate;
-					this._generated_field_247.LayoutInflater = this.LayoutInflater;
-					this._generated_field_247.ViewHolderType = typeof(Storm.Generated.Generated_ViewHolder_10);
+					this._generated_field_347 = new Storm.Mvvm.DataTemplate();
+					this._generated_field_347.ViewId = Resource.Layout.Home_DT_ListViewTemplate;
+					this._generated_field_347.LayoutInflater = this.LayoutInflater;
+					this._generated_field_347.ViewHolderType = typeof(Storm.Generated.Generated_ViewHolder_14);
 				}
-				return this._generated_field_247;
+				return this._generated_field_347;
 			}
 		}
 		
-		protected Storm.Mvvm.TemplateSelectors.SimpleTemplateSelector Generated_Resource_42
+		protected Storm.Mvvm.TemplateSelectors.SimpleTemplateSelector Generated_Resource_58
 		{
 			get
 			{
-				if ((this._generated_field_248 == null))
+				if ((this._generated_field_348 == null))
 				{
-					this._generated_field_248 = new Storm.Mvvm.TemplateSelectors.SimpleTemplateSelector();
+					this._generated_field_348 = new Storm.Mvvm.TemplateSelectors.SimpleTemplateSelector();
 				}
-				return this._generated_field_248;
+				return this._generated_field_348;
 			}
 		}
 		
-		protected Storm.Mvvm.Adapters.BindableAdapter Generated_Resource_43
+		protected Storm.Mvvm.Adapters.BindableAdapter Generated_Resource_59
 		{
 			get
 			{
-				if ((this._generated_field_249 == null))
+				if ((this._generated_field_349 == null))
 				{
-					this._generated_field_249 = new Storm.Mvvm.Adapters.BindableAdapter();
+					this._generated_field_349 = new Storm.Mvvm.Adapters.BindableAdapter();
 				}
-				return this._generated_field_249;
+				return this._generated_field_349;
 			}
 		}
 		
@@ -135,13 +135,13 @@ namespace TodoList.Activities
 		
 		private void Generated_AssignResourceForResource()
 		{
-			this.Generated_Resource_43.GetType().GetProperty("TemplateSelector", BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance).SetValue(this.Generated_Resource_43, this.Generated_Resource_42);
-			this.Generated_Resource_42.GetType().GetProperty("Template", BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance).SetValue(this.Generated_Resource_42, this.Generated_Resource_41);
+			this.Generated_Resource_59.GetType().GetProperty("TemplateSelector", BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance).SetValue(this.Generated_Resource_59, this.Generated_Resource_58);
+			this.Generated_Resource_58.GetType().GetProperty("Template", BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance).SetValue(this.Generated_Resource_58, this.Generated_Resource_57);
 		}
 		
 		private void Generated_AssignResourceForView()
 		{
-			this.ListView.GetType().GetProperty("adapter", BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance).SetValue(this.ListView, this.Generated_Resource_43);
+			this.ListView.GetType().GetProperty("adapter", BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance).SetValue(this.ListView, this.Generated_Resource_59);
 		}
 		
 		protected override List<BindingObject> GetBindingPaths()
@@ -150,24 +150,24 @@ namespace TodoList.Activities
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
-			BindingObject generated_bindingObject_162 = new BindingObject(this.Generated_Resource_43);
-			result.Add(generated_bindingObject_162);
-			BindingExpression generated_bindingExpression_182 = new BindingExpression("Collection", "CollectionTodo");
-			generated_bindingObject_162.AddExpression(generated_bindingExpression_182);
-			BindingObject generated_bindingObject_163 = new BindingObject(this.ListView);
-			result.Add(generated_bindingObject_163);
-			BindingExpression generated_bindingExpression_183 = new BindingExpression("CurrentItem", "SelectedTodo");
-			generated_bindingExpression_183.Mode = BindingMode.TwoWay;
-			generated_bindingExpression_183.UpdateEvent = "CurrentItemChanged";
-			generated_bindingObject_163.AddExpression(generated_bindingExpression_183);
-			BindingObject generated_bindingObject_164 = new BindingObject(this.Generated_ViewElement_30);
-			result.Add(generated_bindingObject_164);
-			BindingExpression generated_bindingExpression_184 = new BindingExpression("Click", "ButtonAdd");
-			generated_bindingObject_164.AddExpression(generated_bindingExpression_184);
-			BindingObject generated_bindingObject_165 = new BindingObject(this.Generated_ViewElement_31);
-			result.Add(generated_bindingObject_165);
-			BindingExpression generated_bindingExpression_185 = new BindingExpression("Click", "ButtonEdit");
-			generated_bindingObject_165.AddExpression(generated_bindingExpression_185);
+			BindingObject generated_bindingObject_243 = new BindingObject(this.Generated_Resource_59);
+			result.Add(generated_bindingObject_243);
+			BindingExpression generated_bindingExpression_271 = new BindingExpression("Collection", "CollectionTodo");
+			generated_bindingObject_243.AddExpression(generated_bindingExpression_271);
+			BindingObject generated_bindingObject_244 = new BindingObject(this.ListView);
+			result.Add(generated_bindingObject_244);
+			BindingExpression generated_bindingExpression_272 = new BindingExpression("CurrentItem", "SelectedTodo");
+			generated_bindingExpression_272.Mode = BindingMode.TwoWay;
+			generated_bindingExpression_272.UpdateEvent = "CurrentItemChanged";
+			generated_bindingObject_244.AddExpression(generated_bindingExpression_272);
+			BindingObject generated_bindingObject_245 = new BindingObject(this.Generated_ViewElement_82);
+			result.Add(generated_bindingObject_245);
+			BindingExpression generated_bindingExpression_273 = new BindingExpression("Click", "ButtonAdd");
+			generated_bindingObject_245.AddExpression(generated_bindingExpression_273);
+			BindingObject generated_bindingObject_246 = new BindingObject(this.Generated_ViewElement_83);
+			result.Add(generated_bindingObject_246);
+			BindingExpression generated_bindingExpression_274 = new BindingExpression("Click", "ButtonEdit");
+			generated_bindingObject_246.AddExpression(generated_bindingExpression_274);
 			return result;
 		}
 	}
