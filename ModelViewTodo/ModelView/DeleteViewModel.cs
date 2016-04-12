@@ -5,6 +5,7 @@ using ModelViewTodo.Interfaces;
 using Storm.Mvvm.Inject;
 using Storm.Mvvm.Navigation;
 using Storm.Mvvm.Services;
+using System;
 
 namespace ModelViewTodo.ModelView
 {
@@ -21,6 +22,9 @@ namespace ModelViewTodo.ModelView
         }
 
         protected IMessageDialogService MessageDialogService => LazyResolver<IMessageDialogService>.Service;
+
+        /*[NavigationParameter(Mode = NavigationParameterMode.Optional)]
+        public Action DeleteCallback { get; set; }*/
 
         protected void DeleteTodo()
         {

@@ -5,13 +5,13 @@
     android:layout_height="wrap_content">
   <EditText
     android:id="nameEdit"
-    android:layout_width="wrap_content"
+    android:layout_width="500dp"
     android:layout_height="wrap_content"
     android:hint="{Binding Title}"
     Text="{Binding Title, Mode=TwoWay, UpdateEvent=TextChanged}"/>
   <EditText
     android:id="descEdit"
-    android:layout_width="wrap_content"
+    android:layout_width="500dp"
     android:layout_height="wrap_content"
     android:hint="{Binding Description}"
     Text="{Binding Description, Mode=TwoWay, UpdateEvent=TextChanged}"/>

@@ -28,19 +28,19 @@ namespace Storm.Generated
 	public class Generated_ViewHolder_8 : Storm.Mvvm.BaseViewHolder
 	{
 		
-		private TextView _generated_field_136;
+		private TextView _generated_field_185;
 		
-		private ILocalizationService _generated_field_137;
+		private ILocalizationService _generated_field_186;
 		
 		protected TextView Generated_ViewElement_26
 		{
 			get
 			{
-				if ((this._generated_field_136 == null))
+				if ((this._generated_field_185 == null))
 				{
-					this._generated_field_136 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_26);
+					this._generated_field_185 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_26);
 				}
-				return this._generated_field_136;
+				return this._generated_field_185;
 			}
 		}
 		
@@ -48,11 +48,11 @@ namespace Storm.Generated
 		{
 			get
 			{
-				if ((this._generated_field_137 == null))
+				if ((this._generated_field_186 == null))
 				{
-					this._generated_field_137 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_186 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_137;
+				return this._generated_field_186;
 			}
 		}
 		
@@ -74,10 +74,10 @@ namespace Storm.Generated
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
-			BindingObject generated_bindingObject_88 = new BindingObject(this.Generated_ViewElement_26);
-			result.Add(generated_bindingObject_88);
-			BindingExpression generated_bindingExpression_96 = new BindingExpression("Text", "Name");
-			generated_bindingObject_88.AddExpression(generated_bindingExpression_96);
+			BindingObject generated_bindingObject_121 = new BindingObject(this.Generated_ViewElement_26);
+			result.Add(generated_bindingObject_121);
+			BindingExpression generated_bindingExpression_137 = new BindingExpression("Text", "Name");
+			generated_bindingObject_121.AddExpression(generated_bindingExpression_137);
 			return result;
 		}
 	}

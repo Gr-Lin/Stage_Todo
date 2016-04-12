@@ -1,5 +1,4 @@
-﻿
-using Storm.Mvvm;
+﻿using Storm.Mvvm;
 using Storm.Mvvm.Commands;
 using System.Windows.Input;
 using Storm.Mvvm.Inject;

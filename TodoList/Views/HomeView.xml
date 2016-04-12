@@ -12,6 +12,7 @@
 
         <TextView android:layout_width="match_parent"
                   android:layout_height="wrap_content"
+                  android:textSize="20dp"
                   Text="{Binding Name}"
                             />
       </LinearLayout>
@@ -28,17 +29,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     adapter="{Binding CollectionTodo, Template={Resource ListViewTemplate}}"
-                    CurrentItem="{Binding SelectedTodo, Mode=TwoWay, UpdateEvent=CurrentItemChanged}"/>      
+                    CurrentItem="{Binding SelectedTodo, Mode=TwoWay, UpdateEvent=CurrentItemChanged}"/>
 
-  <Button android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:text="Add a Todo"
-          Click="{Binding ButtonAdd}"
+
+  <LinearLayout android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a Todo"
+            Click="{Binding ButtonAdd}"
               />
-  <Button android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:text="Edit Todo"
-          Click="{Binding ButtonEdit}"/>
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Todo"
+            Click="{Binding ButtonEdit}"/>
+  </LinearLayout>
 
 </LinearLayout>
 

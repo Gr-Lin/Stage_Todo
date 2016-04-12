@@ -6,7 +6,7 @@ using ModelViewTodo.ModelView;
 
 namespace TodoList.Activities
 {
-    [Activity(Label = "TodoList", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "TodoList", MainLauncher = false, Icon = "@drawable/icon")]
     public partial class HomeActivity : ActivityBase
     {
 

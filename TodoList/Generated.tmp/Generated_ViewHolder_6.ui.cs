@@ -28,19 +28,19 @@ namespace Storm.Generated
 	public class Generated_ViewHolder_6 : Storm.Mvvm.BaseViewHolder
 	{
 		
-		private TextView _generated_field_102;
+		private TextView _generated_field_129;
 		
-		private ILocalizationService _generated_field_103;
+		private ILocalizationService _generated_field_130;
 		
 		protected TextView Generated_ViewElement_20
 		{
 			get
 			{
-				if ((this._generated_field_102 == null))
+				if ((this._generated_field_129 == null))
 				{
-					this._generated_field_102 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_20);
+					this._generated_field_129 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_20);
 				}
-				return this._generated_field_102;
+				return this._generated_field_129;
 			}
 		}
 		
@@ -48,11 +48,11 @@ namespace Storm.Generated
 		{
 			get
 			{
-				if ((this._generated_field_103 == null))
+				if ((this._generated_field_130 == null))
 				{
-					this._generated_field_103 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_130 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_103;
+				return this._generated_field_130;
 			}
 		}
 		
@@ -74,10 +74,10 @@ namespace Storm.Generated
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
-			BindingObject generated_bindingObject_66 = new BindingObject(this.Generated_ViewElement_20);
-			result.Add(generated_bindingObject_66);
-			BindingExpression generated_bindingExpression_70 = new BindingExpression("Text", "Name");
-			generated_bindingObject_66.AddExpression(generated_bindingExpression_70);
+			BindingObject generated_bindingObject_81 = new BindingObject(this.Generated_ViewElement_20);
+			result.Add(generated_bindingObject_81);
+			BindingExpression generated_bindingExpression_93 = new BindingExpression("Text", "Name");
+			generated_bindingObject_81.AddExpression(generated_bindingExpression_93);
 			return result;
 		}
 	}

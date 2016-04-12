@@ -18,6 +18,14 @@ TodoList.Activities.HomeActivity, TodoList;md59f97345651ed990774be3c128537c270.H
 TodoList.Activities.HomeActivity, TodoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59f97345651ed990774be3c128537c270.HomeActivity
 TodoList.Activities.HomeActivity;md59f97345651ed990774be3c128537c270.HomeActivity
 todolist.activities.HomeActivity;md59f97345651ed990774be3c128537c270.HomeActivity
+TodoList.Activities.LoginActivity, TodoList;md59f97345651ed990774be3c128537c270.LoginActivity
+TodoList.Activities.LoginActivity, TodoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59f97345651ed990774be3c128537c270.LoginActivity
+TodoList.Activities.LoginActivity;md59f97345651ed990774be3c128537c270.LoginActivity
+todolist.activities.LoginActivity;md59f97345651ed990774be3c128537c270.LoginActivity
+TodoList.Activities.SignActivity, TodoList;md59f97345651ed990774be3c128537c270.SignActivity
+TodoList.Activities.SignActivity, TodoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59f97345651ed990774be3c128537c270.SignActivity
+TodoList.Activities.SignActivity;md59f97345651ed990774be3c128537c270.SignActivity
+todolist.activities.SignActivity;md59f97345651ed990774be3c128537c270.SignActivity
 Storm.Mvvm.ActivityBase, Storm.Mvvm.Android.Support;md5f30f4d946912a4f29e1131fe923d1dd9.ActivityBase
 Storm.Mvvm.ActivityBase, Storm.Mvvm.Android.Support, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f30f4d946912a4f29e1131fe923d1dd9.ActivityBase
 Storm.Mvvm.ActivityBase;md5f30f4d946912a4f29e1131fe923d1dd9.ActivityBase

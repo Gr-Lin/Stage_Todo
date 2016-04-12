@@ -28,19 +28,19 @@ namespace Storm.Generated
 	public class Generated_ViewHolder_10 : Storm.Mvvm.BaseViewHolder
 	{
 		
-		private TextView _generated_field_170;
+		private TextView _generated_field_241;
 		
-		private ILocalizationService _generated_field_171;
+		private ILocalizationService _generated_field_242;
 		
 		protected TextView Generated_ViewElement_32
 		{
 			get
 			{
-				if ((this._generated_field_170 == null))
+				if ((this._generated_field_241 == null))
 				{
-					this._generated_field_170 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_32);
+					this._generated_field_241 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_32);
 				}
-				return this._generated_field_170;
+				return this._generated_field_241;
 			}
 		}
 		
@@ -48,11 +48,11 @@ namespace Storm.Generated
 		{
 			get
 			{
-				if ((this._generated_field_171 == null))
+				if ((this._generated_field_242 == null))
 				{
-					this._generated_field_171 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_242 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_171;
+				return this._generated_field_242;
 			}
 		}
 		
@@ -74,10 +74,10 @@ namespace Storm.Generated
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
-			BindingObject generated_bindingObject_110 = new BindingObject(this.Generated_ViewElement_32);
-			result.Add(generated_bindingObject_110);
-			BindingExpression generated_bindingExpression_122 = new BindingExpression("Text", "Name");
-			generated_bindingObject_110.AddExpression(generated_bindingExpression_122);
+			BindingObject generated_bindingObject_161 = new BindingObject(this.Generated_ViewElement_32);
+			result.Add(generated_bindingObject_161);
+			BindingExpression generated_bindingExpression_181 = new BindingExpression("Text", "Name");
+			generated_bindingObject_161.AddExpression(generated_bindingExpression_181);
 			return result;
 		}
 	}

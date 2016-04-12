@@ -12,6 +12,8 @@ namespace ModelViewTodo.ModelView
 {
     public class HomeModelView : ViewModelBase
     {
+        //TODO faire en sorte que le retour home/login soit impossible
+
         public ICommand ButtonAdd { get; private set; }
         public ICommand ButtonEdit { get; private set; }
 

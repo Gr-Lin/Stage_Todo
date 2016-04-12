@@ -6,22 +6,23 @@
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:textSize="20dp"
     android:text="Add new Todo"/>
   <EditText
     android:id="name"
-    android:layout_width="wrap_content"
+    android:layout_width="500dp"
     android:layout_height="wrap_content"
     android:hint="Title..."
     Text="{Binding Title, Mode=TwoWay, UpdateEvent=TextChanged}"/>
   <EditText
     android:id="descitption"
-    android:layout_width="wrap_content"
+    android:layout_width="500dp"
     android:layout_height="wrap_content"
     android:hint="Description..."
     Text="{Binding Description, Mode=TwoWay, UpdateEvent=TextChanged}"/>
   <Button
     android:id="save"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Save Todo"
     Click="{Binding ButtonSave}"/>

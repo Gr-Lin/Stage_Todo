@@ -5,7 +5,7 @@ using Storm.Mvvm.Dialogs;
 
 namespace TodoList.Dialogs
 {
-    [BindingElement(Path = "DeleteTodo", TargetPath = "PositiveButtonEvent")]
+    [BindingElement(Path = "DeleteCommand", TargetPath = "PositiveButtonEvent")]
     public partial class DeleteDialog : AlertDialogFragmentBase
     {
         public DeleteDialog()

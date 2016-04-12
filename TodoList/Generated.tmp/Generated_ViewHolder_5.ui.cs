@@ -28,19 +28,19 @@ namespace Storm.Generated
 	public class Generated_ViewHolder_5 : Storm.Mvvm.BaseViewHolder
 	{
 		
-		private TextView _generated_field_85;
+		private TextView _generated_field_105;
 		
-		private ILocalizationService _generated_field_86;
+		private ILocalizationService _generated_field_106;
 		
 		protected TextView Generated_ViewElement_17
 		{
 			get
 			{
-				if ((this._generated_field_85 == null))
+				if ((this._generated_field_105 == null))
 				{
-					this._generated_field_85 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_17);
+					this._generated_field_105 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_17);
 				}
-				return this._generated_field_85;
+				return this._generated_field_105;
 			}
 		}
 		
@@ -48,11 +48,11 @@ namespace Storm.Generated
 		{
 			get
 			{
-				if ((this._generated_field_86 == null))
+				if ((this._generated_field_106 == null))
 				{
-					this._generated_field_86 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_106 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_86;
+				return this._generated_field_106;
 			}
 		}
 		
@@ -74,10 +74,10 @@ namespace Storm.Generated
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
-			BindingObject generated_bindingObject_55 = new BindingObject(this.Generated_ViewElement_17);
-			result.Add(generated_bindingObject_55);
-			BindingExpression generated_bindingExpression_59 = new BindingExpression("Text", "Name");
-			generated_bindingObject_55.AddExpression(generated_bindingExpression_59);
+			BindingObject generated_bindingObject_65 = new BindingObject(this.Generated_ViewElement_17);
+			result.Add(generated_bindingObject_65);
+			BindingExpression generated_bindingExpression_75 = new BindingExpression("Text", "Name");
+			generated_bindingObject_65.AddExpression(generated_bindingExpression_75);
 			return result;
 		}
 	}

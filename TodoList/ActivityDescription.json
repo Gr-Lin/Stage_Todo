@@ -4,6 +4,26 @@
   "fileDescriptions": [
     {
       "activity": {
+        "className": "LoginActivity",
+        "namespaceName": "TodoList.Activities"
+      },
+      "view": {
+        "inputFile": "Views/LoginView.xml",
+        "outputFile": "Log.axml"
+      }
+    },
+    {
+      "activity": {
+        "className": "SignActivity",
+        "namespaceName": "TodoList.Activities"
+      },
+      "view": {
+        "inputFile": "Views/SignUpView.xml",
+        "outputFile": "Sign.axml"
+      }
+    },
+    {
+      "activity": {
         "className": "HomeActivity",
         "namespaceName": "TodoList.Activities"
       },

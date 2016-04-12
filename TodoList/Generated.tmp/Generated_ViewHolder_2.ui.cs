@@ -28,19 +28,19 @@ namespace Storm.Generated
 	public class Generated_ViewHolder_2 : Storm.Mvvm.BaseViewHolder
 	{
 		
-		private TextView _generated_field_38;
+		private TextView _generated_field_43;
 		
-		private ILocalizationService _generated_field_39;
+		private ILocalizationService _generated_field_44;
 		
 		protected TextView Generated_ViewElement_8
 		{
 			get
 			{
-				if ((this._generated_field_38 == null))
+				if ((this._generated_field_43 == null))
 				{
-					this._generated_field_38 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_8);
+					this._generated_field_43 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_8);
 				}
-				return this._generated_field_38;
+				return this._generated_field_43;
 			}
 		}
 		
@@ -48,11 +48,11 @@ namespace Storm.Generated
 		{
 			get
 			{
-				if ((this._generated_field_39 == null))
+				if ((this._generated_field_44 == null))
 				{
-					this._generated_field_39 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_44 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_39;
+				return this._generated_field_44;
 			}
 		}
 		

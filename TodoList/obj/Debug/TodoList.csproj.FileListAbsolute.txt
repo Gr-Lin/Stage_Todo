@@ -38,6 +38,8 @@ C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug
 C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\Validation.xml
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\obj\Debug\res\layout\log.xml
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\obj\Debug\res\layout\sign.xml
 C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\ModelViewTodo.dll.mdb
 C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\obj\Debug\TodoList.dll.mdb
 C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\TodoList.dll.mdb
