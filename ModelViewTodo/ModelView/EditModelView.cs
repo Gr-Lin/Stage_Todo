@@ -8,6 +8,8 @@ using ModelViewTodo.Model;
 using System.Collections.ObjectModel;
 using ModelViewTodo.Interfaces;
 using Storm.Mvvm.Inject;
+using System.Collections.Generic;
+using System;
 
 namespace ModelViewTodo.ModelView
 {
@@ -36,10 +38,7 @@ namespace ModelViewTodo.ModelView
             set { SetProperty(ref _desc, value); }
         }
 
-        public ObservableCollection<Todo> CollectionTodo
-        {
-            get { return LazyResolver<ICollectionTodoService>.Service.GetCollection(); }
-        }
+        public ObservableCollection<Todo> CollectionTodo => LazyResolver<ICollectionTodoService>.Service.GetCollection();
 
         public override void OnNavigatedTo(NavigationArgs e, string parametersKey)
         {
@@ -67,10 +66,14 @@ namespace ModelViewTodo.ModelView
             NavigationService.GoBack();
         }
 
+        protected IMessageDialogService MessageDialogService => LazyResolver<IMessageDialogService>.Service;
+
         private void ButtonDeleteClicked()
         {
-            LazyResolver<ICollectionTodoService>.Service.SuppCollec(Index);
-            NavigationService.GoBack();
+            MessageDialogService.Show("Delete", new Dictionary<string, object>
+                {
+                    {"Index", Index}
+                });
         }
     }
 }

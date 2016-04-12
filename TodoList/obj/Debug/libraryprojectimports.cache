@@ -2,13 +2,16 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\obj\Debug\__library_projects__\PCLCrypto\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\obj\Debug\__library_projects__\Storm.Mvvm.Android.Support\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\obj\Debug\__library_projects__\PCLCrypto\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\obj\Debug\__library_projects__\Storm.Mvvm.Android.Support\library_project_imports\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\obj\Debug\__library_projects__\PCLCrypto.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\obj\Debug\__library_projects__\Storm.Mvvm.Android.Support.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

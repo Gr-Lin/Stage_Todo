@@ -28,23 +28,23 @@ namespace TodoList.Activities
 	public partial class AddActivity
 	{
 		
-		private EditText _generated_field_28;
+		private EditText _generated_field_47;
 		
-		private EditText _generated_field_29;
+		private EditText _generated_field_48;
 		
-		private Button _generated_field_30;
+		private Button _generated_field_49;
 		
-		private ILocalizationService _generated_field_31;
+		private ILocalizationService _generated_field_50;
 		
 		protected EditText name
 		{
 			get
 			{
-				if ((this._generated_field_28 == null))
+				if ((this._generated_field_47 == null))
 				{
-					this._generated_field_28 = this.FindViewById<EditText>(Resource.Id.name);
+					this._generated_field_47 = this.FindViewById<EditText>(Resource.Id.name);
 				}
-				return this._generated_field_28;
+				return this._generated_field_47;
 			}
 		}
 		
@@ -52,11 +52,11 @@ namespace TodoList.Activities
 		{
 			get
 			{
-				if ((this._generated_field_29 == null))
+				if ((this._generated_field_48 == null))
 				{
-					this._generated_field_29 = this.FindViewById<EditText>(Resource.Id.descitption);
+					this._generated_field_48 = this.FindViewById<EditText>(Resource.Id.descitption);
 				}
-				return this._generated_field_29;
+				return this._generated_field_48;
 			}
 		}
 		
@@ -64,11 +64,11 @@ namespace TodoList.Activities
 		{
 			get
 			{
-				if ((this._generated_field_30 == null))
+				if ((this._generated_field_49 == null))
 				{
-					this._generated_field_30 = this.FindViewById<Button>(Resource.Id.save);
+					this._generated_field_49 = this.FindViewById<Button>(Resource.Id.save);
 				}
-				return this._generated_field_30;
+				return this._generated_field_49;
 			}
 		}
 		
@@ -76,11 +76,11 @@ namespace TodoList.Activities
 		{
 			get
 			{
-				if ((this._generated_field_31 == null))
+				if ((this._generated_field_50 == null))
 				{
-					this._generated_field_31 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_50 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_31;
+				return this._generated_field_50;
 			}
 		}
 		
@@ -102,22 +102,22 @@ namespace TodoList.Activities
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
-			BindingObject generated_bindingObject_18 = new BindingObject(this.name);
-			result.Add(generated_bindingObject_18);
-			BindingExpression generated_bindingExpression_20 = new BindingExpression("Text", "Title");
-			generated_bindingExpression_20.Mode = BindingMode.TwoWay;
-			generated_bindingExpression_20.UpdateEvent = "TextChanged";
-			generated_bindingObject_18.AddExpression(generated_bindingExpression_20);
-			BindingObject generated_bindingObject_19 = new BindingObject(this.descitption);
-			result.Add(generated_bindingObject_19);
-			BindingExpression generated_bindingExpression_21 = new BindingExpression("Text", "Description");
-			generated_bindingExpression_21.Mode = BindingMode.TwoWay;
-			generated_bindingExpression_21.UpdateEvent = "TextChanged";
-			generated_bindingObject_19.AddExpression(generated_bindingExpression_21);
-			BindingObject generated_bindingObject_20 = new BindingObject(this.save);
-			result.Add(generated_bindingObject_20);
-			BindingExpression generated_bindingExpression_22 = new BindingExpression("Click", "ButtonSave");
-			generated_bindingObject_20.AddExpression(generated_bindingExpression_22);
+			BindingObject generated_bindingObject_31 = new BindingObject(this.name);
+			result.Add(generated_bindingObject_31);
+			BindingExpression generated_bindingExpression_35 = new BindingExpression("Text", "Title");
+			generated_bindingExpression_35.Mode = BindingMode.TwoWay;
+			generated_bindingExpression_35.UpdateEvent = "TextChanged";
+			generated_bindingObject_31.AddExpression(generated_bindingExpression_35);
+			BindingObject generated_bindingObject_32 = new BindingObject(this.descitption);
+			result.Add(generated_bindingObject_32);
+			BindingExpression generated_bindingExpression_36 = new BindingExpression("Text", "Description");
+			generated_bindingExpression_36.Mode = BindingMode.TwoWay;
+			generated_bindingExpression_36.UpdateEvent = "TextChanged";
+			generated_bindingObject_32.AddExpression(generated_bindingExpression_36);
+			BindingObject generated_bindingObject_33 = new BindingObject(this.save);
+			result.Add(generated_bindingObject_33);
+			BindingExpression generated_bindingExpression_37 = new BindingExpression("Click", "ButtonSave");
+			generated_bindingObject_33.AddExpression(generated_bindingExpression_37);
 			return result;
 		}
 	}

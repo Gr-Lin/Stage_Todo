@@ -4,7 +4,7 @@
   <uses-sdk android:minSdkVersion="16" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="TodoList" android:name="md54c43899c74094d36456dd85c7d3656fc.AppTodo" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+  <application android:label="TodoList" android:name="md5855ec3c1118a8ae1217940cece62c9bf.AppTodo" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
     <activity android:icon="@drawable/icon" android:label="Add" android:name="md59f97345651ed990774be3c128537c270.AddActivity" />
     <activity android:icon="@drawable/icon" android:label="Disp" android:name="md59f97345651ed990774be3c128537c270.EditActivity" />
     <activity android:icon="@drawable/icon" android:label="TodoList" android:name="md59f97345651ed990774be3c128537c270.HomeActivity">

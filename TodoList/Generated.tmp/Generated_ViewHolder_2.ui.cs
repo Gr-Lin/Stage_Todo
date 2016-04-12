@@ -28,19 +28,19 @@ namespace Storm.Generated
 	public class Generated_ViewHolder_2 : Storm.Mvvm.BaseViewHolder
 	{
 		
-		private TextView _generated_field_36;
+		private TextView _generated_field_38;
 		
-		private ILocalizationService _generated_field_37;
+		private ILocalizationService _generated_field_39;
 		
 		protected TextView Generated_ViewElement_8
 		{
 			get
 			{
-				if ((this._generated_field_36 == null))
+				if ((this._generated_field_38 == null))
 				{
-					this._generated_field_36 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_8);
+					this._generated_field_38 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_8);
 				}
-				return this._generated_field_36;
+				return this._generated_field_38;
 			}
 		}
 		
@@ -48,11 +48,11 @@ namespace Storm.Generated
 		{
 			get
 			{
-				if ((this._generated_field_37 == null))
+				if ((this._generated_field_39 == null))
 				{
-					this._generated_field_37 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_39 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_37;
+				return this._generated_field_39;
 			}
 		}
 		
@@ -74,10 +74,10 @@ namespace Storm.Generated
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
-			BindingObject generated_bindingObject_24 = new BindingObject(this.Generated_ViewElement_8);
-			result.Add(generated_bindingObject_24);
-			BindingExpression generated_bindingExpression_28 = new BindingExpression("Text", "Name");
-			generated_bindingObject_24.AddExpression(generated_bindingExpression_28);
+			BindingObject generated_bindingObject_26 = new BindingObject(this.Generated_ViewElement_8);
+			result.Add(generated_bindingObject_26);
+			BindingExpression generated_bindingExpression_30 = new BindingExpression("Text", "Name");
+			generated_bindingObject_26.AddExpression(generated_bindingExpression_30);
 			return result;
 		}
 	}

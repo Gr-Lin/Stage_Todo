@@ -1,7 +1,11 @@
-AppTodo, TodoList;md54c43899c74094d36456dd85c7d3656fc.AppTodo
-AppTodo, TodoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54c43899c74094d36456dd85c7d3656fc.AppTodo
-AppTodo;md54c43899c74094d36456dd85c7d3656fc.AppTodo
-AppTodo;md54c43899c74094d36456dd85c7d3656fc.AppTodo
+TodoList.AppTodo, TodoList;md5855ec3c1118a8ae1217940cece62c9bf.AppTodo
+TodoList.AppTodo, TodoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5855ec3c1118a8ae1217940cece62c9bf.AppTodo
+TodoList.AppTodo;md5855ec3c1118a8ae1217940cece62c9bf.AppTodo
+todolist.AppTodo;md5855ec3c1118a8ae1217940cece62c9bf.AppTodo
+TodoList.Dialogs.DeleteDialog, TodoList;md563664f89ad84b8de73a4bc4266d0419f.DeleteDialog
+TodoList.Dialogs.DeleteDialog, TodoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md563664f89ad84b8de73a4bc4266d0419f.DeleteDialog
+TodoList.Dialogs.DeleteDialog;md563664f89ad84b8de73a4bc4266d0419f.DeleteDialog
+todolist.dialogs.DeleteDialog;md563664f89ad84b8de73a4bc4266d0419f.DeleteDialog
 TodoList.Activities.AddActivity, TodoList;md59f97345651ed990774be3c128537c270.AddActivity
 TodoList.Activities.AddActivity, TodoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59f97345651ed990774be3c128537c270.AddActivity
 TodoList.Activities.AddActivity;md59f97345651ed990774be3c128537c270.AddActivity

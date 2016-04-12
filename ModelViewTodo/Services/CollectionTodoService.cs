@@ -7,19 +7,17 @@ namespace ModelViewTodo.Services
     public class CollectionTodoService : ICollectionTodoService
     {
         private ObservableCollection<Todo> _todoCollection;
-        int count = 0;
+        private int _count = 0;
 
         public ObservableCollection<Todo> GetCollection()
         {
-            if (_todoCollection == null)
-                _todoCollection = new ObservableCollection<Todo>();
-            return _todoCollection;
+            return _todoCollection ?? (_todoCollection = new ObservableCollection<Todo>());
         }
 
         public void AddCollec(string title, string description)
         {
-            _todoCollection.Add(new Todo(title, description, count));
-            count++;
+            _todoCollection.Add(new Todo(title, description, _count));
+            _count++;
         }
 
         public void EditCollec(string title, string description, int index)
@@ -31,7 +29,7 @@ namespace ModelViewTodo.Services
         public void SuppCollec(int i)
         {
             _todoCollection.Remove(_todoCollection[i]);
-            count--;
+            _count--;
         }
     }
 }

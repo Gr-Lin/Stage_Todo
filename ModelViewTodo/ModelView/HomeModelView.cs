@@ -15,16 +15,13 @@ namespace ModelViewTodo.ModelView
         public ICommand ButtonAdd { get; private set; }
         public ICommand ButtonEdit { get; private set; }
 
-        private Todo _Selected;
+        private Todo _selected;
 
         public Todo SelectedTodo {
-            get { return _Selected; } 
-            set { SetProperty(ref _Selected, value); } }
+            get { return _selected; } 
+            set { SetProperty(ref _selected, value); } }
 
-        public ObservableCollection<Todo> CollectionTodo
-        {
-            get { return LazyResolver<ICollectionTodoService>.Service.GetCollection(); }
-        }
+        public ObservableCollection<Todo> CollectionTodo => LazyResolver<ICollectionTodoService>.Service.GetCollection();
 
 
         public HomeModelView()

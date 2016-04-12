@@ -26,6 +26,8 @@ namespace TodoList
 		
 		public static void UpdateIdValues()
 		{
+			global::PCLCrypto.Resource.String.ApplicationName = global::TodoList.Resource.String.ApplicationName;
+			global::PCLCrypto.Resource.String.Hello = global::TodoList.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -67,13 +69,13 @@ namespace TodoList
 			public const int Edit = 2131034117;
 			
 			// aapt resource value: 0x7f050009
-			public const int Generated_ViewElement_3 = 2131034121;
+			public const int Generated_ViewElement_6 = 2131034121;
 			
 			// aapt resource value: 0x7f05000a
-			public const int Generated_ViewElement_4 = 2131034122;
+			public const int Generated_ViewElement_7 = 2131034122;
 			
 			// aapt resource value: 0x7f05000b
-			public const int Generated_ViewElement_5 = 2131034123;
+			public const int Generated_ViewElement_8 = 2131034123;
 			
 			// aapt resource value: 0x7f050008
 			public const int ListView = 2131034120;

@@ -1,33 +1,43 @@
 ﻿using System;
+using System.Collections.Generic;
 using Android.App;
 using Android.Runtime;
-using Storm.Mvvm;
-using Storm.Mvvm.Inject;
-using System.Collections.Generic;
-using TodoList.Activities;
 using ModelViewTodo.Interfaces;
 using ModelViewTodo.Services;
+using Storm.Mvvm;
+using Storm.Mvvm.Inject;
+using TodoList.Activities;
+using TodoList.Dialogs;
 
-[Application]
-public class AppTodo : ApplicationBase
+namespace TodoList
 {
-    public AppTodo(IntPtr handle, JniHandleOwnership transfer) : base(handle, transfer)
+    [Application]
+    public class AppTodo : ApplicationBase
     {
-    }
-
-    public override void OnCreate()
-    {
-        base.OnCreate();
-
-        Dictionary<string, Type> views = new Dictionary<string, Type>
+        public AppTodo(IntPtr handle, JniHandleOwnership transfer) : base(handle, transfer)
         {
-            { "Home", typeof(HomeActivity)},
-            { "Add", typeof(AddActivity)},
-            { "Disp", typeof(EditActivity) }
-        };
+        }
+
+        public override void OnCreate()
+        {
+            base.OnCreate();
+
+            Dictionary<string, Type> views = new Dictionary<string, Type>
+            {
+                { "Home", typeof(HomeActivity)},
+                { "Add", typeof(AddActivity)},
+                { "Disp", typeof(EditActivity) }
+            };
 
 
-        AndroidContainer.CreateInstance<AndroidContainer>(this, views);
-        AndroidContainer.GetInstance().RegisterInstance<ICollectionTodoService>(new CollectionTodoService());
+            Dictionary<string, Type> dialogs = new Dictionary<string, Type>
+            {
+                { "Delete", typeof (DeleteDialog) }
+            };
+
+
+            AndroidContainer.CreateInstance<AndroidContainer>(this, views, dialogs);
+            AndroidContainer.GetInstance().RegisterInstance<ICollectionTodoService>(new CollectionTodoService());
+        }
     }
 }
