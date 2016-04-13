@@ -28,75 +28,75 @@ namespace TodoList.Activities
 	public partial class LoginActivity
 	{
 		
-		private EditText _generated_field_750;
+		private EditText _generated_field_175;
 		
-		private EditText _generated_field_751;
+		private EditText _generated_field_176;
 		
-		private CheckBox _generated_field_752;
+		private CheckBox _generated_field_177;
 		
-		private Button _generated_field_753;
+		private Button _generated_field_178;
 		
-		private Button _generated_field_754;
+		private Button _generated_field_179;
 		
-		private ILocalizationService _generated_field_755;
+		private ILocalizationService _generated_field_180;
 		
-		protected EditText Generated_ViewElement_240
+		protected EditText Generated_ViewElement_56
 		{
 			get
 			{
-				if ((this._generated_field_750 == null))
+				if ((this._generated_field_175 == null))
 				{
-					this._generated_field_750 = this.FindViewById<EditText>(Resource.Id.Generated_ViewElement_240);
+					this._generated_field_175 = this.FindViewById<EditText>(Resource.Id.Generated_ViewElement_56);
 				}
-				return this._generated_field_750;
+				return this._generated_field_175;
 			}
 		}
 		
-		protected EditText Generated_ViewElement_241
+		protected EditText Generated_ViewElement_57
 		{
 			get
 			{
-				if ((this._generated_field_751 == null))
+				if ((this._generated_field_176 == null))
 				{
-					this._generated_field_751 = this.FindViewById<EditText>(Resource.Id.Generated_ViewElement_241);
+					this._generated_field_176 = this.FindViewById<EditText>(Resource.Id.Generated_ViewElement_57);
 				}
-				return this._generated_field_751;
+				return this._generated_field_176;
 			}
 		}
 		
-		protected CheckBox Generated_ViewElement_242
+		protected CheckBox Generated_ViewElement_58
 		{
 			get
 			{
-				if ((this._generated_field_752 == null))
+				if ((this._generated_field_177 == null))
 				{
-					this._generated_field_752 = this.FindViewById<CheckBox>(Resource.Id.Generated_ViewElement_242);
+					this._generated_field_177 = this.FindViewById<CheckBox>(Resource.Id.Generated_ViewElement_58);
 				}
-				return this._generated_field_752;
+				return this._generated_field_177;
 			}
 		}
 		
-		protected Button Generated_ViewElement_243
+		protected Button Generated_ViewElement_59
 		{
 			get
 			{
-				if ((this._generated_field_753 == null))
+				if ((this._generated_field_178 == null))
 				{
-					this._generated_field_753 = this.FindViewById<Button>(Resource.Id.Generated_ViewElement_243);
+					this._generated_field_178 = this.FindViewById<Button>(Resource.Id.Generated_ViewElement_59);
 				}
-				return this._generated_field_753;
+				return this._generated_field_178;
 			}
 		}
 		
-		protected Button Generated_ViewElement_244
+		protected Button Generated_ViewElement_60
 		{
 			get
 			{
-				if ((this._generated_field_754 == null))
+				if ((this._generated_field_179 == null))
 				{
-					this._generated_field_754 = this.FindViewById<Button>(Resource.Id.Generated_ViewElement_244);
+					this._generated_field_179 = this.FindViewById<Button>(Resource.Id.Generated_ViewElement_60);
 				}
-				return this._generated_field_754;
+				return this._generated_field_179;
 			}
 		}
 		
@@ -104,11 +104,11 @@ namespace TodoList.Activities
 		{
 			get
 			{
-				if ((this._generated_field_755 == null))
+				if ((this._generated_field_180 == null))
 				{
-					this._generated_field_755 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_180 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_755;
+				return this._generated_field_180;
 			}
 		}
 		
@@ -130,32 +130,32 @@ namespace TodoList.Activities
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
-			BindingObject generated_bindingObject_540 = new BindingObject(this.Generated_ViewElement_240);
-			result.Add(generated_bindingObject_540);
-			BindingExpression generated_bindingExpression_600 = new BindingExpression("Text", "Id");
-			generated_bindingExpression_600.Mode = BindingMode.TwoWay;
-			generated_bindingExpression_600.UpdateEvent = "TextChanged";
-			generated_bindingObject_540.AddExpression(generated_bindingExpression_600);
-			BindingObject generated_bindingObject_541 = new BindingObject(this.Generated_ViewElement_241);
-			result.Add(generated_bindingObject_541);
-			BindingExpression generated_bindingExpression_601 = new BindingExpression("Text", "Pass");
-			generated_bindingExpression_601.Mode = BindingMode.TwoWay;
-			generated_bindingExpression_601.UpdateEvent = "TextChanged";
-			generated_bindingObject_541.AddExpression(generated_bindingExpression_601);
-			BindingObject generated_bindingObject_542 = new BindingObject(this.Generated_ViewElement_242);
-			result.Add(generated_bindingObject_542);
-			BindingExpression generated_bindingExpression_602 = new BindingExpression("Checked", "RememberChecked");
-			generated_bindingExpression_602.Mode = BindingMode.TwoWay;
-			generated_bindingExpression_602.UpdateEvent = "CheckedChange";
-			generated_bindingObject_542.AddExpression(generated_bindingExpression_602);
-			BindingObject generated_bindingObject_543 = new BindingObject(this.Generated_ViewElement_243);
-			result.Add(generated_bindingObject_543);
-			BindingExpression generated_bindingExpression_603 = new BindingExpression("Click", "ButtonLogin");
-			generated_bindingObject_543.AddExpression(generated_bindingExpression_603);
-			BindingObject generated_bindingObject_544 = new BindingObject(this.Generated_ViewElement_244);
-			result.Add(generated_bindingObject_544);
-			BindingExpression generated_bindingExpression_604 = new BindingExpression("Click", "ButtonSignUp");
-			generated_bindingObject_544.AddExpression(generated_bindingExpression_604);
+			BindingObject generated_bindingObject_126 = new BindingObject(this.Generated_ViewElement_56);
+			result.Add(generated_bindingObject_126);
+			BindingExpression generated_bindingExpression_140 = new BindingExpression("Text", "Id");
+			generated_bindingExpression_140.Mode = BindingMode.TwoWay;
+			generated_bindingExpression_140.UpdateEvent = "TextChanged";
+			generated_bindingObject_126.AddExpression(generated_bindingExpression_140);
+			BindingObject generated_bindingObject_127 = new BindingObject(this.Generated_ViewElement_57);
+			result.Add(generated_bindingObject_127);
+			BindingExpression generated_bindingExpression_141 = new BindingExpression("Text", "Pass");
+			generated_bindingExpression_141.Mode = BindingMode.TwoWay;
+			generated_bindingExpression_141.UpdateEvent = "TextChanged";
+			generated_bindingObject_127.AddExpression(generated_bindingExpression_141);
+			BindingObject generated_bindingObject_128 = new BindingObject(this.Generated_ViewElement_58);
+			result.Add(generated_bindingObject_128);
+			BindingExpression generated_bindingExpression_142 = new BindingExpression("Checked", "RememberChecked");
+			generated_bindingExpression_142.Mode = BindingMode.TwoWay;
+			generated_bindingExpression_142.UpdateEvent = "CheckedChange";
+			generated_bindingObject_128.AddExpression(generated_bindingExpression_142);
+			BindingObject generated_bindingObject_129 = new BindingObject(this.Generated_ViewElement_59);
+			result.Add(generated_bindingObject_129);
+			BindingExpression generated_bindingExpression_143 = new BindingExpression("Click", "ButtonLogin");
+			generated_bindingObject_129.AddExpression(generated_bindingExpression_143);
+			BindingObject generated_bindingObject_130 = new BindingObject(this.Generated_ViewElement_60);
+			result.Add(generated_bindingObject_130);
+			BindingExpression generated_bindingExpression_144 = new BindingExpression("Click", "ButtonSignUp");
+			generated_bindingObject_130.AddExpression(generated_bindingExpression_144);
 			return result;
 		}
 	}

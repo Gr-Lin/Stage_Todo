@@ -94,6 +94,8 @@
     <Compile Include="ModelView\HomeModelView.cs" />
     <Compile Include="ModelView\LogViewModel.cs" />
     <Compile Include="Model\HttpResult.cs" />
+    <Compile Include="Model\HttpResultTodo.cs" />
+    <Compile Include="Model\HttpResultList.cs" />
     <Compile Include="Model\Todo.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -2,42 +2,26 @@
 {
     public class Todo
     {
-        private string _name;
-        private string _des;
-        private int _index;
-
         public Todo()
         {
-            _name = "";
-            _des = "";
-            _index = 0;
+            Name = "";
+            Description = "";
+            Index = 0;
         }
 
-        public Todo(string n, string d, int i)
+        public Todo(string n, string d)
         {
-            _name = n;
-            _des = d;
-            _index = i;
+            Name = n;
+            Description = d;
         }
 
-        public string Name {
-            get { return _name;}
-            set { _name = value;} 
-        }
+        public string Name { get; set; }
 
-        public string Description
-        {
-            get { return _des; }
-            set { _des = value; }
-        }
+        public string Description { get; set; }
 
-        public int Index
-        {
-            get { return _index; }
-            set { _index = value; }
-        }
+        public int Index { get; set; }
 
-       public override string ToString()
+        public override string ToString()
         {
             return Name + ":" + Description;
         }

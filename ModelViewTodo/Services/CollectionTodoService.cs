@@ -1,6 +1,11 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using ModelViewTodo.Interfaces;
 using ModelViewTodo.Model;
+using Newtonsoft.Json;
+using Storm.Mvvm.Extensions;
+using Storm.Mvvm.Inject;
 
 namespace ModelViewTodo.Services
 {
@@ -11,12 +16,13 @@ namespace ModelViewTodo.Services
 
         public ObservableCollection<Todo> GetCollection()
         {
+            GetTodoOnline();
             return _todoCollection ?? (_todoCollection = new ObservableCollection<Todo>());
         }
 
         public void AddCollec(string title, string description)
         {
-            _todoCollection.Add(new Todo(title, description, _count));
+            _todoCollection.Add(new Todo(title, description));
             _count++;
         }
 
@@ -31,5 +37,21 @@ namespace ModelViewTodo.Services
             _todoCollection.Remove(_todoCollection[i]);
             _count--;
         }
+
+        public async void GetTodoOnline()
+        {
+            List<Todo> list = null;
+            try
+            {
+                list = await LazyResolver<IHttpService>.Service.GetTodoAsync();
+            }
+            catch (JsonException e)
+            {
+                //error ne devrai pas arrive
+            }
+            if (list != null)
+                _todoCollection = new ObservableCollection<Todo>(list);
+        }
+        
     }
 }

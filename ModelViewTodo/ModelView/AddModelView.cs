@@ -3,6 +3,7 @@ using Storm.Mvvm.Commands;
 using System.Windows.Input;
 using Storm.Mvvm.Inject;
 using ModelViewTodo.Interfaces;
+using ModelViewTodo.Model;
 
 namespace ModelViewTodo.ModelView
 {
@@ -27,14 +28,21 @@ namespace ModelViewTodo.ModelView
 
         public AddModelView()
         {
-            ButtonSave = new DelegateCommand(ButtonClicked);
+            ButtonSave = new DelegateCommand(ButtonSaveAsyncClicked);
         }
 
 
-        private void ButtonClicked()
+        private async void ButtonSaveAsyncClicked()
         {
-            LazyResolver<ICollectionTodoService>.Service.AddCollec(Title, Description);
-            NavigationService.GoBack();
+            if (Title != "" && Description != "")
+            {
+                HttpResult res = await LazyResolver<IHttpService>.Service.AddTodoAsync(new Todo(Title, Description));
+                if (res.Ok)
+                {
+                    LazyResolver<ICollectionTodoService>.Service.AddCollec(Title, Description);
+                    NavigationService.GoBack();
+                }
+            }
         }
     }
 }

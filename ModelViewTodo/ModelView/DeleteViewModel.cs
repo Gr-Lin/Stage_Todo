@@ -5,7 +5,8 @@ using ModelViewTodo.Interfaces;
 using Storm.Mvvm.Inject;
 using Storm.Mvvm.Navigation;
 using Storm.Mvvm.Services;
-using System;
+using System.Collections.ObjectModel;
+using ModelViewTodo.Model;
 
 namespace ModelViewTodo.ModelView
 {
@@ -18,19 +19,21 @@ namespace ModelViewTodo.ModelView
 
         public DeleteViewModel()
         {
-            DeleteCommand = new DelegateCommand(DeleteTodo);
+            DeleteCommand = new DelegateCommand(DeleteTodoAsync);
         }
 
         protected IMessageDialogService MessageDialogService => LazyResolver<IMessageDialogService>.Service;
+        public ObservableCollection<Todo> CollectionTodo => LazyResolver<ICollectionTodoService>.Service.GetCollection();
 
-        /*[NavigationParameter(Mode = NavigationParameterMode.Optional)]
-        public Action DeleteCallback { get; set; }*/
-
-        protected void DeleteTodo()
-        {
-            LazyResolver<ICollectionTodoService>.Service.SuppCollec(Index);
-            MessageDialogService.DismissCurrentDialog();
-            NavigationService.GoBack();
+        protected async void DeleteTodoAsync()
+        { 
+            HttpResult res = await LazyResolver<IHttpService>.Service.DeleteTodoAsync(CollectionTodo[Index]);
+            if (res.Ok)
+            {
+                LazyResolver<ICollectionTodoService>.Service.SuppCollec(Index);
+                MessageDialogService.DismissCurrentDialog();
+                NavigationService.GoBack();
+            }
         }
     }
 }

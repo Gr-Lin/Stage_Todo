@@ -6,6 +6,7 @@ using ModelViewTodo.Model;
 using ModelViewTodo.Interfaces;
 using Storm.Mvvm.Inject;
 using System.Collections.Generic;
+using ModelViewTodo.Services;
 using Storm.Mvvm.Services;
 
 namespace ModelViewTodo.ModelView
@@ -25,12 +26,12 @@ namespace ModelViewTodo.ModelView
 
         public ObservableCollection<Todo> CollectionTodo => LazyResolver<ICollectionTodoService>.Service.GetCollection();
 
-
         public HomeModelView()
         {
-            CollectionTodo.Add(new Todo("Premiere Tache", "Ceci est un descriptif de tache", 0));
+          
+            /*CollectionTodo.Add(new Todo("Premiere Tache", "Ceci est un descriptif de tache", 0));
             CollectionTodo.Add(new Todo("Deuxieme Tache", "J'essais des trucs", 1));
-            CollectionTodo.Add(new Todo ("test", "pk ca s'afficheen double wesh je comprends aps", 2));
+            CollectionTodo.Add(new Todo ("test", "pk ca s'afficheen double wesh je comprends aps", 2));*/
 
             ButtonAdd = new DelegateCommand(ButtonAddClicked);
             ButtonEdit = new DelegateCommand(ButtonEditClicked);

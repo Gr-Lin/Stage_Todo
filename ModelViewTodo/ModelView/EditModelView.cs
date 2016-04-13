@@ -51,14 +51,21 @@ namespace ModelViewTodo.ModelView
         public EditModelView()
         {
             ButtonBack = new DelegateCommand(ButtonBackClicked);
-            ButtonSaveEdit = new DelegateCommand(ButtonSaveEditClicked);
+            ButtonSaveEdit = new DelegateCommand(ButtonSaveEditAsyncClicked);
             ButtonDelete = new DelegateCommand(ButtonDeleteClicked);
         }
 
-        public void ButtonSaveEditClicked()
+        public async void ButtonSaveEditAsyncClicked()
         {
-            LazyResolver<ICollectionTodoService>.Service.EditCollec(Title, Description, Index);
-            NavigationService.GoBack();
+            if (Title != "" && Description != "")
+            {
+                HttpResult res = await LazyResolver<IHttpService>.Service.EditTodoAsync(CollectionTodo[_index]);
+                if (res.Ok)
+                {
+                    LazyResolver<ICollectionTodoService>.Service.EditCollec(Title, Description, Index);
+                    NavigationService.GoBack();
+                }
+            }
         }
 
         private void ButtonBackClicked()
