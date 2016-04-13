@@ -1,8 +1,9 @@
 ﻿using Storm.Mvvm;
 using Storm.Mvvm.Commands;
 using System.Windows.Input;
-using ModelViewTodo.Interfaces;
-using Storm.Mvvm.Inject;
+using Android.Widget;
+using ModelViewTodo.Model;
+using ModelViewTodo.Services;
 
 namespace ModelViewTodo.ModelView
 {
@@ -11,6 +12,7 @@ namespace ModelViewTodo.ModelView
         //TODO verifier que id et pwd ne soit pas nul
         private string _id;
         private string _pwd;
+        private string _error;
 
         public ICommand ButtonLogin { get; set; }
         public ICommand ButtonSignUp { get; set; }
@@ -27,16 +29,27 @@ namespace ModelViewTodo.ModelView
             set { SetProperty(ref _pwd, value); }
         }
 
+        public string Error
+        {
+            get { return _error; }
+            set { SetProperty(ref _error, value); }
+        }
+
         public LogViewModel()
         {
-            ButtonLogin = new DelegateCommand(ButtonLogClicked);
+            ButtonLogin = new DelegateCommand(ButtonLogClickedAsync);
             ButtonSignUp = new DelegateCommand(ButtonSignClicked);
         }
 
 
-        private void ButtonLogClicked()
+        private async void ButtonLogClickedAsync()
         {
-            LazyResolver<IHttpService>.Service.Connexion(Id, Pass);
+            HttpService co = new HttpService();
+            HttpResult IsCo = await co.ConnexionAsync(Id, Pass);
+            if (IsCo.Ok)
+                NavigationService.Navigate("Home");
+            else
+               Error = IsCo.Message;
         }
 
         private void ButtonSignClicked()

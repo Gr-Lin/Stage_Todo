@@ -1,11 +1,11 @@
 ﻿using System.Threading.Tasks;
+using ModelViewTodo.Model;
 
 namespace ModelViewTodo.Interfaces
 {
     public interface IHttpService
     {
-        Task<bool> ConnexionAsync(string i, string p);
-        //connection
+        Task<HttpResult> ConnexionAsync(string i, string p);
         //enregistrement
     }
 

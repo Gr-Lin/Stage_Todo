@@ -1,7 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
 using ModelViewTodo.Interfaces;
+using ModelViewTodo.Model;
+using Newtonsoft.Json;
 
 namespace ModelViewTodo.Services
 {
@@ -9,10 +13,12 @@ namespace ModelViewTodo.Services
     {
         private const string Url = "http://storm-project.fr/ios/api/";
         private const string Login = "/login";
+
         private readonly HttpClient _client = new HttpClient();
 
-        public async Task<bool> ConnexionAsync(string log, string pwd)
+        public async Task<HttpResult> ConnexionAsync(string log, string pwd)
         {
+            pwd = HashPassword(pwd);
             IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>()
             {
                 new KeyValuePair<string, string>("login", log),
@@ -20,13 +26,19 @@ namespace ModelViewTodo.Services
             };
             HttpContent content = new FormUrlEncodedContent(tab);
 
-            var result = await _client.PostAsync(Url+Login, content);
+            var result = await _client.PostAsync(Url + Login, content);
+            var resultString = await result.Content.ReadAsStringAsync();
+        
+            return JsonConvert.DeserializeObject<HttpResult>(resultString);
 
-            //var resultContent = await result.Content.ReadAsStringAsync();
+        }
 
-            //JSon.JsonConvert.DeserializeObject<object final>
-
-            return true;//retourner la valeur de ok 
+        public string HashPassword(string pwd)
+        {
+            SHA1CryptoServiceProvider algo = new SHA1CryptoServiceProvider();
+            byte[] buffer = System.Text.Encoding.UTF8.GetBytes(pwd);
+            string pass =  BitConverter.ToString(algo.ComputeHash(buffer)).Replace("-", ""); 
+            return pass.ToLower();
         }
     }
 }
