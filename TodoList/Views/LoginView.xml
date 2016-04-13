@@ -29,6 +29,12 @@
       android:layout_height="wrap_content"
       Text="{Binding Pass, Mode=TwoWay, UpdateEvent=TextChanged}"/>
   </LinearLayout>
+  
+  <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me" 
+        Checked="{Binding RememberChecked, Mode=TwoWay, UpdateEvent=CheckedChange}"/>
 
   <LinearLayout android:orientation="horizontal"
               android:layout_width="wrap_content"

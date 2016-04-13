@@ -86,6 +86,8 @@ class MonoPackageManager_Resources {
 		"Newtonsoft.Json.dll",
 		"OkHttp.dll",
 		"PCLCrypto.dll",
+		"PCLStorage.Abstractions.dll",
+		"PCLStorage.dll",
 		"PInvoke.BCrypt.dll",
 		"PInvoke.Kernel32.dll",
 		"PInvoke.NCrypt.dll",

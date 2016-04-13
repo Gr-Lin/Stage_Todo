@@ -8,7 +8,7 @@
     <activity android:icon="@drawable/icon" android:label="Add" android:name="md59f97345651ed990774be3c128537c270.AddActivity" />
     <activity android:icon="@drawable/icon" android:label="Disp" android:name="md59f97345651ed990774be3c128537c270.EditActivity" />
     <activity android:icon="@drawable/icon" android:label="TodoList" android:name="md59f97345651ed990774be3c128537c270.HomeActivity" />
-    <activity android:icon="@drawable/icon" android:label="Login" android:name="md59f97345651ed990774be3c128537c270.LoginActivity">
+    <activity android:icon="@drawable/icon" android:label="Todo" android:name="md59f97345651ed990774be3c128537c270.LoginActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

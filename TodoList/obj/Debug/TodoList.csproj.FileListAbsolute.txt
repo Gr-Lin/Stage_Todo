@@ -42,6 +42,10 @@ C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\obj\Debug
 C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\ModernHttpClient.dll
 C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\OkHttp.dll
 C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\ModernHttpClient.dll.mdb
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\PCLStorage.Abstractions.dll
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\PCLStorage.dll
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\PCLStorage.xml
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\PCLStorage.Abstractions.xml
 C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\ModelViewTodo.dll.mdb
-C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\TodoList\obj\Debug\TodoList.dll.mdb
-C:\Users\admin\Documents\Visual Studio 2015\Projects\TodoList\TodoList\bin\Debug\TodoList.dll.mdb
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\obj\Debug\TodoList.dll.mdb
+C:\Users\admin\documents\visual studio 2015\Projects\TodoList\TodoList\bin\Debug\TodoList.dll.mdb

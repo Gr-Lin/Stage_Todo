@@ -40,6 +40,7 @@ namespace TodoList
             var cont = AndroidContainer.GetInstance();
             cont.RegisterInstance<ICollectionTodoService>(new CollectionTodoService());
             cont.RegisterInstance<IHttpService>(new HttpService());
+            cont.RegisterInstance<IUserService>(new UserService());
         }
     }
 }

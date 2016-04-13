@@ -29,6 +29,8 @@ namespace TodoList
 			global::ModernHttpClient.Resource.String.library_name = global::TodoList.Resource.String.library_name;
 			global::PCLCrypto.Resource.String.ApplicationName = global::TodoList.Resource.String.ApplicationName;
 			global::PCLCrypto.Resource.String.Hello = global::TodoList.Resource.String.Hello;
+			global::PCLStorage.Resource.String.ApplicationName = global::TodoList.Resource.String.ApplicationName;
+			global::PCLStorage.Resource.String.Hello = global::TodoList.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -70,25 +72,28 @@ namespace TodoList
 			public const int Edit = 2131034117;
 			
 			// aapt resource value: 0x7f05000c
-			public const int Generated_ViewElement_78 = 2131034124;
+			public const int Generated_ViewElement_240 = 2131034124;
 			
 			// aapt resource value: 0x7f05000d
-			public const int Generated_ViewElement_79 = 2131034125;
+			public const int Generated_ViewElement_241 = 2131034125;
 			
 			// aapt resource value: 0x7f05000e
-			public const int Generated_ViewElement_80 = 2131034126;
+			public const int Generated_ViewElement_242 = 2131034126;
 			
 			// aapt resource value: 0x7f05000f
-			public const int Generated_ViewElement_81 = 2131034127;
+			public const int Generated_ViewElement_243 = 2131034127;
+			
+			// aapt resource value: 0x7f050010
+			public const int Generated_ViewElement_244 = 2131034128;
 			
 			// aapt resource value: 0x7f050009
-			public const int Generated_ViewElement_82 = 2131034121;
+			public const int Generated_ViewElement_245 = 2131034121;
 			
 			// aapt resource value: 0x7f05000a
-			public const int Generated_ViewElement_83 = 2131034122;
+			public const int Generated_ViewElement_246 = 2131034122;
 			
 			// aapt resource value: 0x7f05000b
-			public const int Generated_ViewElement_84 = 2131034123;
+			public const int Generated_ViewElement_247 = 2131034123;
 			
 			// aapt resource value: 0x7f050008
 			public const int ListView = 2131034120;

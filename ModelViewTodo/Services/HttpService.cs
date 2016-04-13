@@ -17,12 +17,16 @@ namespace ModelViewTodo.Services
 
         private readonly HttpClient _client = new HttpClient();
 
-        public async Task<HttpResult> ConnexionAsync(string log, string pwd)
+        public async Task<HttpResult> ConnexionAsync(string log, string pwd, bool hashed)
         {
+            if (!hashed)
+            {
+                pwd = HashPassword(pwd);
+            }
             IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>()
             {
                 new KeyValuePair<string, string>("login", log),
-                new KeyValuePair<string, string>("password", HashPassword(pwd))
+                new KeyValuePair<string, string>("password", pwd)
             };
             HttpContent content = new FormUrlEncodedContent(tab);
 
