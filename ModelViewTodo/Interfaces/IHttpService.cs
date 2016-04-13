@@ -6,7 +6,7 @@ namespace ModelViewTodo.Interfaces
     public interface IHttpService
     {
         Task<HttpResult> ConnexionAsync(string i, string p);
-        //enregistrement
+        Task<HttpResult>RegisterAsync(string i, string p);
     }
 
 }

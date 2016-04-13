@@ -3,7 +3,8 @@ using Storm.Mvvm.Commands;
 using System.Windows.Input;
 using Android.Widget;
 using ModelViewTodo.Model;
-using ModelViewTodo.Services;
+using Org.Apache.Http.Protocol;
+using HttpService = ModelViewTodo.Services.HttpService;
 
 namespace ModelViewTodo.ModelView
 {
@@ -38,23 +39,28 @@ namespace ModelViewTodo.ModelView
         public LogViewModel()
         {
             ButtonLogin = new DelegateCommand(ButtonLogClickedAsync);
-            ButtonSignUp = new DelegateCommand(ButtonSignClicked);
+            ButtonSignUp = new DelegateCommand(ButtonSignClickedAsync);
         }
 
 
         private async void ButtonLogClickedAsync()
         {
             HttpService co = new HttpService();
-            HttpResult IsCo = await co.ConnexionAsync(Id, Pass);
-            if (IsCo.Ok)
+            HttpResult isCo = await co.ConnexionAsync(Id, Pass);
+            if (isCo.Ok)
                 NavigationService.Navigate("Home");
             else
-               Error = IsCo.Message;
+               Error = isCo.Message;
         }
 
-        private void ButtonSignClicked()
+        private async void ButtonSignClickedAsync()
         {
-            //demande l'enregistrent
+            HttpService co = new HttpService();
+            HttpResult isCo = await co.RegisterAsync(Id, Pass);
+            if (isCo.Ok)
+                NavigationService.Navigate("Home");
+            else
+                Error = isCo.Message;
         }
     }
 }
