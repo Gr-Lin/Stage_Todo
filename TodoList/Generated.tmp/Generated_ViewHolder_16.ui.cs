@@ -28,19 +28,19 @@ namespace Storm.Generated
 	public class Generated_ViewHolder_16 : Storm.Mvvm.BaseViewHolder
 	{
 		
-		private TextView _generated_field_406;
+		private TextView _generated_field_423;
 		
-		private ILocalizationService _generated_field_407;
+		private ILocalizationService _generated_field_424;
 		
-		protected TextView Generated_ViewElement_135
+		protected TextView Generated_ViewElement_152
 		{
 			get
 			{
-				if ((this._generated_field_406 == null))
+				if ((this._generated_field_423 == null))
 				{
-					this._generated_field_406 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_135);
+					this._generated_field_423 = this.View.FindViewById<TextView>(Resource.Id.Generated_ViewElement_152);
 				}
-				return this._generated_field_406;
+				return this._generated_field_423;
 			}
 		}
 		
@@ -48,11 +48,11 @@ namespace Storm.Generated
 		{
 			get
 			{
-				if ((this._generated_field_407 == null))
+				if ((this._generated_field_424 == null))
 				{
-					this._generated_field_407 = DependencyService.Container.Resolve<ILocalizationService>();
+					this._generated_field_424 = DependencyService.Container.Resolve<ILocalizationService>();
 				}
-				return this._generated_field_407;
+				return this._generated_field_424;
 			}
 		}
 		
@@ -74,10 +74,10 @@ namespace Storm.Generated
 			this.Generated_AssignResourceForResource();
 			this.Generated_AssignResourceForView();
 			List<BindingObject> result = new List<BindingObject>();
-			BindingObject generated_bindingObject_293 = new BindingObject(this.Generated_ViewElement_135);
-			result.Add(generated_bindingObject_293);
-			BindingExpression generated_bindingExpression_325 = new BindingExpression("Text", "Name");
-			generated_bindingObject_293.AddExpression(generated_bindingExpression_325);
+			BindingObject generated_bindingObject_310 = new BindingObject(this.Generated_ViewElement_152);
+			result.Add(generated_bindingObject_310);
+			BindingExpression generated_bindingExpression_342 = new BindingExpression("Text", "Name");
+			generated_bindingObject_310.AddExpression(generated_bindingExpression_342);
 			return result;
 		}
 	}

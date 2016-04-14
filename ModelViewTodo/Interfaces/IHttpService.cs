@@ -11,7 +11,7 @@ namespace ModelViewTodo.Interfaces
         string HashPassword(string pwd);
         Task<List<Todo>> GetTodoAsync();
         Task<HttpResultTodo> AddTodoAsync(Todo t);
-        Task<HttpResultTodo> EditTodoAsync(Todo t);
+        Task<HttpResultTodo> EditTodoAsync(int i, string t, string d);
         Task<HttpResult> DeleteTodoAsync(Todo t);
 
     }

@@ -91,13 +91,13 @@ namespace ModelViewTodo.Services
             return JsonConvert.DeserializeObject<HttpResultTodo>(resultString);
         }
 
-        public async Task<HttpResultTodo> EditTodoAsync(Todo t)
+        public async Task<HttpResultTodo> EditTodoAsync(int i, string t, string d)
         {
             IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>()
             {
-                new KeyValuePair<string, string>("id", t.Index.ToString()),
-                new KeyValuePair<string, string>("title", t.Name),
-                new KeyValuePair<string, string>("description", t.Description)
+                new KeyValuePair<string, string>("id", i.ToString()),
+                new KeyValuePair<string, string>("title", t),
+                new KeyValuePair<string, string>("description", d)
             };
             HttpContent content = new FormUrlEncodedContent(tab);
 
@@ -115,7 +115,7 @@ namespace ModelViewTodo.Services
             };
             HttpContent content = new FormUrlEncodedContent(tab);
 
-            var result = await _client.PostAsync(Url + Add, content);
+            var result = await _client.PostAsync(Url + Delete, content);
             var resultString = await result.Content.ReadAsStringAsync();
 
             return JsonConvert.DeserializeObject<HttpResult>(resultString);

@@ -1,5 +1,4 @@
-﻿
-using Storm.Mvvm;
+﻿using Storm.Mvvm;
 using Storm.Mvvm.Commands;
 using System.Windows.Input;
 using Storm.Mvvm.Navigation;
@@ -9,7 +8,6 @@ using System.Collections.ObjectModel;
 using ModelViewTodo.Interfaces;
 using Storm.Mvvm.Inject;
 using System.Collections.Generic;
-using System;
 
 namespace ModelViewTodo.ModelView
 {
@@ -50,6 +48,8 @@ namespace ModelViewTodo.ModelView
 
         public EditModelView()
         {
+            System.Diagnostics.Debug.WriteLine(_index + "");
+
             ButtonBack = new DelegateCommand(ButtonBackClicked);
             ButtonSaveEdit = new DelegateCommand(ButtonSaveEditAsyncClicked);
             ButtonDelete = new DelegateCommand(ButtonDeleteClicked);
@@ -59,10 +59,10 @@ namespace ModelViewTodo.ModelView
         {
             if (Title != "" && Description != "")
             {
-                HttpResult res = await LazyResolver<IHttpService>.Service.EditTodoAsync(CollectionTodo[_index]);
+                HttpResultTodo res = await LazyResolver<IHttpService>.Service.EditTodoAsync(Index, Title, Description);
                 if (res.Ok)
                 {
-                    LazyResolver<ICollectionTodoService>.Service.EditCollec(Title, Description, Index);
+                    LazyResolver<ICollectionTodoService>.Service.EditCollec(res.Resource.Name, res.Resource.Description, Index);
                     NavigationService.GoBack();
                 }
             }

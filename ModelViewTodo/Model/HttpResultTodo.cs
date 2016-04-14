@@ -2,7 +2,7 @@
 {
     public class HttpResultTodo : HttpResult
     {
-        public Todo Ressource { get; set; }
+        public Todo Resource { get; set; }
     }
 
 }

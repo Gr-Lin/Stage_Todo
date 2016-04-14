@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using ModelViewTodo.Interfaces;
 using ModelViewTodo.Model;
 using Newtonsoft.Json;
-using Storm.Mvvm.Extensions;
 using Storm.Mvvm.Inject;
 
 namespace ModelViewTodo.Services

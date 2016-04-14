@@ -101,6 +101,7 @@ namespace ModelViewTodo.ModelView
             if (isCo.Ok)
             {
                 RememberUser();
+                await LazyResolver<ICollectionTodoService>.Service.Refresh();
                 NavigationService.Navigate("Home");
             }
             else

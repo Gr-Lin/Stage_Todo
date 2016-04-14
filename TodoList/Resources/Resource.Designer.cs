@@ -72,28 +72,31 @@ namespace TodoList
 			public const int Edit = 2131034117;
 			
 			// aapt resource value: 0x7f05000c
-			public const int Generated_ViewElement_56 = 2131034124;
+			public const int Generated_ViewElement_351 = 2131034124;
 			
 			// aapt resource value: 0x7f05000d
-			public const int Generated_ViewElement_57 = 2131034125;
+			public const int Generated_ViewElement_352 = 2131034125;
 			
 			// aapt resource value: 0x7f05000e
-			public const int Generated_ViewElement_58 = 2131034126;
+			public const int Generated_ViewElement_353 = 2131034126;
 			
 			// aapt resource value: 0x7f05000f
-			public const int Generated_ViewElement_59 = 2131034127;
+			public const int Generated_ViewElement_354 = 2131034127;
 			
 			// aapt resource value: 0x7f050010
-			public const int Generated_ViewElement_60 = 2131034128;
+			public const int Generated_ViewElement_355 = 2131034128;
+			
+			// aapt resource value: 0x7f050011
+			public const int Generated_ViewElement_356 = 2131034129;
 			
 			// aapt resource value: 0x7f050009
-			public const int Generated_ViewElement_61 = 2131034121;
+			public const int Generated_ViewElement_357 = 2131034121;
 			
 			// aapt resource value: 0x7f05000a
-			public const int Generated_ViewElement_62 = 2131034122;
+			public const int Generated_ViewElement_358 = 2131034122;
 			
 			// aapt resource value: 0x7f05000b
-			public const int Generated_ViewElement_63 = 2131034123;
+			public const int Generated_ViewElement_359 = 2131034123;
 			
 			// aapt resource value: 0x7f050008
 			public const int ListView = 2131034120;

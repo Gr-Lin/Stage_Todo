@@ -8,7 +8,6 @@ namespace ModelViewTodo.Model
         {
             Name = "";
             Description = "";
-            Index = 0;
         }
 
         public Todo(string n, string d)
@@ -27,7 +26,7 @@ namespace ModelViewTodo.Model
 
         public override string ToString()
         {
-            return Name + ":" + Description;
+            return Name + " : " + Description;
         }
     }
 }
