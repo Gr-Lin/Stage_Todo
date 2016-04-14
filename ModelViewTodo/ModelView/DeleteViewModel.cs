@@ -23,12 +23,13 @@ namespace ModelViewTodo.ModelView
         }
 
         protected IMessageDialogService MessageDialogService => LazyResolver<IMessageDialogService>.Service;
+        public ICollectionTodoService CollectionService => LazyResolver<ICollectionTodoService>.Service;
         public ObservableCollection<Todo> CollectionTodo => LazyResolver<ICollectionTodoService>.Service.GetCollection();
         public IToastService ToastService => LazyResolver<IToastService>.Service;
 
         protected async void DeleteTodoAsync()
         { 
-            HttpResult res = await LazyResolver<IHttpService>.Service.DeleteTodoAsync(CollectionTodo[Index]);
+            HttpResult res = await LazyResolver<IHttpService>.Service.DeleteTodoAsync(CollectionService.GetTodoById(Index));
             if (res.Ok)
             {
                 ToastService.DisplayToast("Deleting Todo");
