@@ -15,7 +15,6 @@ namespace ModelViewTodo.ModelView
     {
         private string _title;
         private string _desc;
-        private string _error;
 
         public ICommand ButtonBack { get; set; }
         public ICommand ButtonSaveEdit { get; set; }
@@ -36,13 +35,8 @@ namespace ModelViewTodo.ModelView
             set { SetProperty(ref _desc, value); }
         }
 
-        public string Error
-        {
-            get { return _error; }
-            set { SetProperty(ref _error, value); }
-        }
-
         public ObservableCollection<Todo> CollectionTodo => CollectionService.GetCollection();
+        public IToastService ToastService => LazyResolver<IToastService>.Service;
 
         public ICollectionTodoService CollectionService => LazyResolver<ICollectionTodoService>.Service;
 
@@ -68,16 +62,15 @@ namespace ModelViewTodo.ModelView
                 HttpResultTodo res = await LazyResolver<IHttpService>.Service.EditTodoAsync(Index, Title, Description);
                 if (res.Ok)
                 {
-                    Error = "Saving Change";
+                   ToastService.DisplayToast("Saving Change");
                     LazyResolver<ICollectionTodoService>.Service.EditCollec(res.Resource.Name, res.Resource.Description,
                         Index);
                     NavigationService.GoBack();
                 }
                 else
-                {
-                    Error = res.Message;
-                }
-            }
+                    ToastService.DisplayToast(res.Message);
+            } else 
+                ToastService.DisplayToast("Todo's field can't be blank");
         }
 
         private void ButtonBackClicked()

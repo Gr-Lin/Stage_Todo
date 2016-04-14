@@ -8,6 +8,7 @@ using Storm.Mvvm;
 using Storm.Mvvm.Inject;
 using TodoList.Activities;
 using TodoList.Dialogs;
+using TodoList.Services;
 
 namespace TodoList
 {
@@ -41,6 +42,8 @@ namespace TodoList
             cont.RegisterInstance<ICollectionTodoService>(new CollectionTodoService());
             cont.RegisterInstance<IHttpService>(new HttpService());
             cont.RegisterInstance<IUserService>(new UserService());
+            cont.RegisterInstance<IToastService>(new ToastService());
+
         }
     }
 }

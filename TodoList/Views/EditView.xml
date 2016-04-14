@@ -4,13 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
   <EditText
-    android:id="nameEdit"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="{Binding Title}"
     Text="{Binding Title, Mode=TwoWay, UpdateEvent=TextChanged}"/>
   <EditText
-    android:id="descEdit"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="{Binding Description}"
@@ -19,14 +17,12 @@
   <LinearLayout android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-    <Button android:id="Edit"
-            android:layout_width="match_parent"
+    <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Save Change"
             android:layout_weight="1"
             Click="{Binding ButtonSaveEdit}"/>
-    <Button android:id="Delete"
-            android:layout_width="match_parent"
+    <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Delete Todo"
@@ -37,9 +33,5 @@
            android:layout_height="wrap_content"
            android:text="Back"
            Click="{Binding ButtonBack}"/>
-  <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    Text="{Binding Error}"/>
 </LinearLayout>
 

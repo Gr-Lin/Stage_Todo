@@ -13,6 +13,7 @@ namespace ModelViewTodo.ModelView
         private string _descritpion;
 
         public ICommand ButtonSave { get; set; }
+        public IToastService ToastService => LazyResolver<IToastService>.Service;
 
         public string Title
         {
@@ -39,10 +40,13 @@ namespace ModelViewTodo.ModelView
                 HttpResult res = await LazyResolver<IHttpService>.Service.AddTodoAsync(new Todo(Title, Description));
                 if (res.Ok)
                 {
-                    LazyResolver<ICollectionTodoService>.Service.AddCollec(Title, Description);
-                    NavigationService.GoBack();
-                }
-            }
+                   ToastService.DisplayToast("Adding Todo");
+                   LazyResolver<ICollectionTodoService>.Service.AddCollec(Title, Description);
+                   NavigationService.GoBack();
+                } else 
+                    ToastService.DisplayToast(res.Message);
+            } else 
+                ToastService.DisplayToast("Todo's field can't be Blank");
         }
     }
 }

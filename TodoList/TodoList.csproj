@@ -129,6 +129,8 @@
     <Compile Include="Dialogs\DeleteDialog.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AbstractAndroidService.cs" />
+    <Compile Include="Services\ToastService.cs" />
   </ItemGroup>
   <ItemGroup>
     <BindingProcess Include="ActivityDescription.json" />

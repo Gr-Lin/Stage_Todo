@@ -23,6 +23,7 @@ namespace ModelViewTodo.ModelView
             set { SetProperty(ref _selected, value); } }
 
         public ObservableCollection<Todo> CollectionTodo => LazyResolver<ICollectionTodoService>.Service.GetCollection();
+        public IToastService ToastService => LazyResolver<IToastService>.Service;
 
         public HomeModelView()
         {
@@ -43,6 +44,8 @@ namespace ModelViewTodo.ModelView
                 {
                     {"Index", /*CollectionTodo.IndexOf(SelectedTodo)*/ SelectedTodo.Index}
                 });
+            else 
+                ToastService.DisplayToast("Please select a Todo to edit");
         }
 
         public override void OnNavigatedTo(NavigationArgs e, string parametersKey)

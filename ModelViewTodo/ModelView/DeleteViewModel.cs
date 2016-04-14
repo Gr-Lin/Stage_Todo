@@ -24,16 +24,20 @@ namespace ModelViewTodo.ModelView
 
         protected IMessageDialogService MessageDialogService => LazyResolver<IMessageDialogService>.Service;
         public ObservableCollection<Todo> CollectionTodo => LazyResolver<ICollectionTodoService>.Service.GetCollection();
+        public IToastService ToastService => LazyResolver<IToastService>.Service;
 
         protected async void DeleteTodoAsync()
         { 
             HttpResult res = await LazyResolver<IHttpService>.Service.DeleteTodoAsync(CollectionTodo[Index]);
             if (res.Ok)
             {
+                ToastService.DisplayToast("Deleting Todo");
                 LazyResolver<ICollectionTodoService>.Service.SuppCollec(Index);
                 MessageDialogService.DismissCurrentDialog();
                 NavigationService.GoBack();
             }
+            else
+                ToastService.DisplayToast(res.Message);
         }
     }
 }

@@ -12,7 +12,6 @@ namespace ModelViewTodo.ModelView
     {
         private string _id;
         private string _pwd;
-        private string _error;
         private bool _isChecked;
         private bool _isHashed;
 
@@ -35,12 +34,6 @@ namespace ModelViewTodo.ModelView
             }
         }
 
-        public string Error
-        {
-            get { return _error; }
-            set { SetProperty(ref _error, value); }
-        }
-
         public bool RememberChecked
         {
             get { return _isChecked; }
@@ -49,6 +42,7 @@ namespace ModelViewTodo.ModelView
 
         public IHttpService HttpService => LazyResolver<IHttpService>.Service;
         public IUserService UserService => LazyResolver<IUserService>.Service;
+        public IToastService ToastService => LazyResolver<IToastService>.Service;
 
         public LogViewModel()
         {
@@ -80,19 +74,19 @@ namespace ModelViewTodo.ModelView
 
         private async void ButtonLogClickedAsync()
         {
-            Error = "Connecting";
+            ToastService.DisplayToast("Connecting");
             HttpResult isCo = await HttpService.ConnexionAsync(Id, Pass, _isHashed);
 
             if (isCo.Ok)
             {
                 RememberUser();
-                Error = "Connected. Loading";
+                ToastService.DisplayToast("Connected. Loading");
                 await LazyResolver<ICollectionTodoService>.Service.Refresh();
-                Error = "Loaded";
+               ToastService.DisplayToast("Loaded");
                 NavigationService.Navigate("Home");
             }
             else
-                Error = isCo.Message;
+                ToastService.DisplayToast(isCo.Message);
         }
 
         private async void ButtonSignClickedAsync()
@@ -105,7 +99,7 @@ namespace ModelViewTodo.ModelView
                 NavigationService.Navigate("Home");
             }
             else
-                Error = isCo.Message;
+                ToastService.DisplayToast(isCo.Message);
         }
     }
 }

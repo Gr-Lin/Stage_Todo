@@ -87,6 +87,7 @@
   <ItemGroup>
     <Compile Include="Interfaces\ICollectionTodoService.cs" />
     <Compile Include="Interfaces\IHttpService.cs" />
+    <Compile Include="Interfaces\IToastService.cs" />
     <Compile Include="Interfaces\IUserService.cs" />
     <Compile Include="ModelView\AddModelView.cs" />
     <Compile Include="ModelView\DeleteViewModel.cs" />
