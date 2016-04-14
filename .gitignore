@@ -45,3 +45,11 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+.vs
+TodoList/bin
+TodoList/obj
+TodoList/Generated.tmp
+packages
+ModelViewTodo/bin
+ModelViewTodo/obj
