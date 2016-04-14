@@ -124,6 +124,7 @@
     <Compile Include="Activities\EditActivity.cs" />
     <Compile Include="Activities\HomeActivity.cs" />
     <Compile Include="Activities\LoginActivity.cs" />
+    <Compile Include="Activities\ShareActivity.cs" />
     <Compile Include="AppTodo.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="Dialogs\DeleteDialog.cs" />
@@ -161,6 +162,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\LoginView.xml" />
+    <Content Include="Views\ShareView.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ModelViewTodo\ModelViewTodo.csproj">

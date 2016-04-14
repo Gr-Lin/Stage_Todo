@@ -19,6 +19,7 @@ namespace ModelViewTodo.ModelView
         public ICommand ButtonBack { get; set; }
         public ICommand ButtonSaveEdit { get; set; }
         public ICommand ButtonDelete { get; set; }
+        public ICommand ButtonShare { get; set; }
 
         [NavigationParameter]
         public int Index { get; set; }
@@ -53,6 +54,7 @@ namespace ModelViewTodo.ModelView
             ButtonBack = new DelegateCommand(ButtonBackClicked);
             ButtonSaveEdit = new DelegateCommand(ButtonSaveEditAsyncClicked);
             ButtonDelete = new DelegateCommand(ButtonDeleteClicked);
+            ButtonShare = new DelegateCommand(ButtonShareClicked);
         }
 
         public async void ButtonSaveEditAsyncClicked()
@@ -86,6 +88,14 @@ namespace ModelViewTodo.ModelView
                 {
                     {"Index", Index}
                 });
+        }
+
+        public void ButtonShareClicked()
+        {
+            NavigationService.Navigate("Share"/*, new Dictionary<string, object>
+            {
+                {"Todo", Index }
+            }*/);
         }
     }
 }

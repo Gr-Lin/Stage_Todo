@@ -65,53 +65,56 @@ namespace TodoList
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f05000c
-			public const int Generated_ViewElement_182 = 2131034124;
-			
 			// aapt resource value: 0x7f05000d
-			public const int Generated_ViewElement_183 = 2131034125;
+			public const int Generated_ViewElement_45 = 2131034125;
 			
 			// aapt resource value: 0x7f05000e
-			public const int Generated_ViewElement_184 = 2131034126;
+			public const int Generated_ViewElement_46 = 2131034126;
 			
 			// aapt resource value: 0x7f05000f
-			public const int Generated_ViewElement_185 = 2131034127;
+			public const int Generated_ViewElement_47 = 2131034127;
 			
 			// aapt resource value: 0x7f050010
-			public const int Generated_ViewElement_186 = 2131034128;
+			public const int Generated_ViewElement_48 = 2131034128;
 			
-			// aapt resource value: 0x7f050009
-			public const int Generated_ViewElement_187 = 2131034121;
+			// aapt resource value: 0x7f050011
+			public const int Generated_ViewElement_49 = 2131034129;
 			
 			// aapt resource value: 0x7f05000a
-			public const int Generated_ViewElement_188 = 2131034122;
+			public const int Generated_ViewElement_50 = 2131034122;
 			
 			// aapt resource value: 0x7f05000b
-			public const int Generated_ViewElement_189 = 2131034123;
+			public const int Generated_ViewElement_51 = 2131034123;
+			
+			// aapt resource value: 0x7f05000c
+			public const int Generated_ViewElement_52 = 2131034124;
 			
 			// aapt resource value: 0x7f050000
-			public const int Generated_ViewElement_190 = 2131034112;
+			public const int Generated_ViewElement_53 = 2131034112;
 			
 			// aapt resource value: 0x7f050001
-			public const int Generated_ViewElement_191 = 2131034113;
+			public const int Generated_ViewElement_54 = 2131034113;
 			
 			// aapt resource value: 0x7f050003
-			public const int Generated_ViewElement_192 = 2131034115;
+			public const int Generated_ViewElement_55 = 2131034115;
 			
 			// aapt resource value: 0x7f050004
-			public const int Generated_ViewElement_193 = 2131034116;
+			public const int Generated_ViewElement_56 = 2131034116;
 			
 			// aapt resource value: 0x7f050005
-			public const int Generated_ViewElement_194 = 2131034117;
+			public const int Generated_ViewElement_57 = 2131034117;
 			
 			// aapt resource value: 0x7f050006
-			public const int Generated_ViewElement_195 = 2131034118;
-			
-			// aapt resource value: 0x7f050008
-			public const int ListView = 2131034120;
+			public const int Generated_ViewElement_58 = 2131034118;
 			
 			// aapt resource value: 0x7f050007
-			public const int back = 2131034119;
+			public const int Generated_ViewElement_59 = 2131034119;
+			
+			// aapt resource value: 0x7f050009
+			public const int ListView = 2131034121;
+			
+			// aapt resource value: 0x7f050008
+			public const int back = 2131034120;
 			
 			// aapt resource value: 0x7f050002
 			public const int save = 2131034114;

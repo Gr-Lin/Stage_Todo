@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+	<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Username" />
+		<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Generated_ViewElement_105" />
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Password" />
+		<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" android:id="@+id/Generated_ViewElement_106" />
+	</LinearLayout>
+	<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Remember Me" android:id="@+id/Generated_ViewElement_107" />
+	<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+		<Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Log In" android:layout_weight="1" android:id="@+id/Generated_ViewElement_108" />
+		<Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sign Up" android:layout_weight="1" android:id="@+id/Generated_ViewElement_109" />
+	</LinearLayout>
+</LinearLayout>

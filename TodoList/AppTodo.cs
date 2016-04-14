@@ -27,7 +27,8 @@ namespace TodoList
             {
                 { "Home", typeof(HomeActivity)},
                 { "Add", typeof(AddActivity)},
-                { "Disp", typeof(EditActivity) }
+                { "Disp", typeof(EditActivity) },
+                { "Share", typeof(ShareActivity) }
             };
 
 

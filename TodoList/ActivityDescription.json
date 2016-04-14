@@ -41,6 +41,16 @@
         "inputFile": "Views/EditView.xml",
         "outputFile": "Disp.axml"
       }
+    },
+    {
+      "activity": {
+        "className": "ShareActivity",
+        "namespaceName": "TodoList.Activities"
+      },
+      "view": {
+        "inputFile": "Views/ShareView.xml",
+        "outputFile": "Share.axml"
+      }
     }
   ]
 }

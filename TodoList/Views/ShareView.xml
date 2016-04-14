@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  
+  <TextView android:width="match_parent"
+            android:height="wrap_content"
+            android:textSize="20dp"
+            android:text="Share by SMS"/>
+  
+  <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    
+  <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Phone Number"/>
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Contact"
+    android:inputType="number"
+    Text="{Binding PhoneNumber, Mode=TwoWay, UpdateEvent=TextChanged}"/>
+  </LinearLayout>
+
+  <LinearLayout android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+    
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="20dp"
+              android:text="Message Preview : "/>
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      Text="{Binding MessageTodo, Mode=TwoWay, UpdateEvent=TextChanged}"/>
+  </LinearLayout>
+  
+  <Button android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Send SMS"
+          Click="{Binding SendSMS}"/>
+
+  <TextView android:width="match_parent"
+            android:height="wrap_content"
+            android:textSize="30dp"
+            android:text="Or"/>
+
+  <TextView android:width="match_parent"
+            android:height="wrap_content"
+            android:textSize="20dp"
+            android:text="Share by Email"/>
+
+  <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="20dp"
+              android:text="Email Adresse"/>
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Contact@contac.com"
+      android:inputType="textEmailAddress"
+      Text="{Binding EmailAdress, Mode=TwoWay, UpdateEvent=TextChanged}"/>
+  </LinearLayout>
+
+  <LinearLayout android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="20dp"
+              android:text="Message Preview : "/>
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      Text="{Binding MessageTodo, Mode=TwoWay, UpdateEvent=TextChanged}"/>
+  </LinearLayout>
+
+  <Button android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Send Email"
+          Click="{Binding SendMail}"/>
+ 
+</LinearLayout>

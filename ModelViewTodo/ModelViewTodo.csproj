@@ -94,6 +94,7 @@
     <Compile Include="ModelView\EditModelView.cs" />
     <Compile Include="ModelView\HomeModelView.cs" />
     <Compile Include="ModelView\LogViewModel.cs" />
+    <Compile Include="ModelView\ShareViewModel.cs" />
     <Compile Include="Model\HttpResult.cs" />
     <Compile Include="Model\HttpResultTodo.cs" />
     <Compile Include="Model\HttpResultList.cs" />

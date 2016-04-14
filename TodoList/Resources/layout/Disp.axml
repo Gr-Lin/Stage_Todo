@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+	<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Generated_ViewElement_115" />
+	<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Generated_ViewElement_116" />
+	<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+		<Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Save Change" android:layout_weight="1" android:id="@+id/Generated_ViewElement_117" />
+		<Button android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="Delete Todo" android:id="@+id/Generated_ViewElement_118" />
+	</LinearLayout>
+	<Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Share this Todo" android:id="@+id/Generated_ViewElement_119" />
+	<Button android:id="@+id/back" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Back" />
+</LinearLayout>
