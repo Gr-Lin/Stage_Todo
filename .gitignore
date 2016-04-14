@@ -53,3 +53,4 @@ TodoList/Generated.tmp
 packages
 ModelViewTodo/bin
 ModelViewTodo/obj
+TodoList/Resources/Resource.Designer.cs

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Threading.Tasks;
 using ModelViewTodo.Interfaces;
 using ModelViewTodo.Model;
@@ -18,6 +19,11 @@ namespace ModelViewTodo.Services
             return _todoCollection ?? (_todoCollection = new ObservableCollection<Todo>());
         }
 
+        public Todo GetTodoById(int id)
+        {
+            return _todoCollection.FirstOrDefault(x => x.Index == id);
+        }
+
         public void AddCollec(string title, string description)
         {
             _todoCollection.Add(new Todo(title, description));
@@ -26,13 +32,13 @@ namespace ModelViewTodo.Services
 
         public void EditCollec(string title, string description, int index)
         {
-            _todoCollection[index].Name = title;
-            _todoCollection[index].Description = description;
+            GetTodoById(index).Name = title;
+            GetTodoById(index).Description = description;
         }
 
         public void SuppCollec(int i)
         {
-            _todoCollection.Remove(_todoCollection[i]);
+            _todoCollection.Remove(GetTodoById(i));
             _count--;
         }
 

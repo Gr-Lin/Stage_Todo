@@ -27,7 +27,7 @@ namespace ModelViewTodo.Services
             {
                 pwd = HashPassword(pwd);
             }
-            IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>()
+            IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string>("login", log),
                 new KeyValuePair<string, string>("password", pwd)
@@ -43,7 +43,7 @@ namespace ModelViewTodo.Services
 
         public async Task<HttpResult> RegisterAsync(string id, string pwd)
         {
-            IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>()
+            IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string>("login", id),
                 new KeyValuePair<string, string>("password", HashPassword(pwd))
@@ -78,7 +78,7 @@ namespace ModelViewTodo.Services
 
         public async Task<HttpResultTodo> AddTodoAsync(Todo t)
         {
-            IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>()
+            IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string>("title", t.Name),
                 new KeyValuePair<string, string>("description", t.Description)
@@ -93,7 +93,7 @@ namespace ModelViewTodo.Services
 
         public async Task<HttpResultTodo> EditTodoAsync(int i, string t, string d)
         {
-            IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>()
+            IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string>("id", i.ToString()),
                 new KeyValuePair<string, string>("title", t),
@@ -109,7 +109,7 @@ namespace ModelViewTodo.Services
 
         public async Task<HttpResult> DeleteTodoAsync(Todo t)
         {
-            IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>()
+            IEnumerable<KeyValuePair<string, string>> tab = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string>("id", t.Index.ToString()),
             };

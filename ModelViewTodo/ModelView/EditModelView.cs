@@ -15,7 +15,7 @@ namespace ModelViewTodo.ModelView
     {
         private string _title;
         private string _desc;
-        private int _index;
+        private string _error;
 
         public ICommand ButtonBack { get; set; }
         public ICommand ButtonSaveEdit { get; set; }
@@ -36,20 +36,26 @@ namespace ModelViewTodo.ModelView
             set { SetProperty(ref _desc, value); }
         }
 
-        public ObservableCollection<Todo> CollectionTodo => LazyResolver<ICollectionTodoService>.Service.GetCollection();
+        public string Error
+        {
+            get { return _error; }
+            set { SetProperty(ref _error, value); }
+        }
+
+        public ObservableCollection<Todo> CollectionTodo => CollectionService.GetCollection();
+
+        public ICollectionTodoService CollectionService => LazyResolver<ICollectionTodoService>.Service;
 
         public override void OnNavigatedTo(NavigationArgs e, string parametersKey)
         {
             base.OnNavigatedTo(e, parametersKey);
-            _index = Index;
-            Title = CollectionTodo[_index].Name;
-            Description = CollectionTodo[_index].Description;
+            var todo = CollectionService.GetTodoById(Index);
+            Title = todo.Name;
+            Description = todo.Description;
         }
 
         public EditModelView()
         {
-            System.Diagnostics.Debug.WriteLine(_index + "");
-
             ButtonBack = new DelegateCommand(ButtonBackClicked);
             ButtonSaveEdit = new DelegateCommand(ButtonSaveEditAsyncClicked);
             ButtonDelete = new DelegateCommand(ButtonDeleteClicked);
@@ -62,8 +68,14 @@ namespace ModelViewTodo.ModelView
                 HttpResultTodo res = await LazyResolver<IHttpService>.Service.EditTodoAsync(Index, Title, Description);
                 if (res.Ok)
                 {
-                    LazyResolver<ICollectionTodoService>.Service.EditCollec(res.Resource.Name, res.Resource.Description, Index);
+                    Error = "Saving Change";
+                    LazyResolver<ICollectionTodoService>.Service.EditCollec(res.Resource.Name, res.Resource.Description,
+                        Index);
                     NavigationService.GoBack();
+                }
+                else
+                {
+                    Error = res.Message;
                 }
             }
         }
