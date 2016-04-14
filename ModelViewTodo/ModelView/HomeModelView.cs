@@ -44,8 +44,8 @@ namespace ModelViewTodo.ModelView
 
         private void ButtonEditClicked ()
         {
-            NavigationService.Navigate("Disp", new Dictionary<string, object>()
-                                         {
+            NavigationService.Navigate("Disp", new Dictionary<string, object>
+            {
                                              {"Index", CollectionTodo.IndexOf(SelectedTodo)}
                                          });
         }

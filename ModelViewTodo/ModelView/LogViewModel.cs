@@ -73,17 +73,22 @@ namespace ModelViewTodo.ModelView
 
         private void RememberUser()
         {
-           User u = !_isHashed ? new User(Id, HttpService.HashPassword(Pass), RememberChecked) : new User(Id, Pass, RememberChecked);
-           UserService.SaveUserAsync(u);
+            User u = !_isHashed ? new User(Id, HttpService.HashPassword(Pass), RememberChecked) : new User(Id, Pass, RememberChecked);
+            UserService.SaveUserAsync(u);
         }
 
 
         private async void ButtonLogClickedAsync()
         {
+            Error = "Connecting";
             HttpResult isCo = await HttpService.ConnexionAsync(Id, Pass, _isHashed);
+
             if (isCo.Ok)
             {
                 RememberUser();
+                Error = "Connected. Loading";
+                await LazyResolver<ICollectionTodoService>.Service.Refresh();
+                Error = "Loaded";
                 NavigationService.Navigate("Home");
             }
             else

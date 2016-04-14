@@ -16,7 +16,6 @@ namespace ModelViewTodo.Services
 
         public ObservableCollection<Todo> GetCollection()
         {
-            GetTodoOnline();
             return _todoCollection ?? (_todoCollection = new ObservableCollection<Todo>());
         }
 
@@ -38,20 +37,18 @@ namespace ModelViewTodo.Services
             _count--;
         }
 
-        public async void GetTodoOnline()
+        public async Task<bool> Refresh()
         {
-            List<Todo> list = null;
             try
             {
-                list = await LazyResolver<IHttpService>.Service.GetTodoAsync();
+                _todoCollection = new ObservableCollection<Todo>(await LazyResolver<IHttpService>.Service.GetTodoAsync());
+                return true;
             }
-            catch (JsonException e)
+            catch (JsonException)
             {
-                //error ne devrai pas arrive
+                return false;
             }
-            if (list != null)
-                _todoCollection = new ObservableCollection<Todo>(list);
         }
-        
+
     }
 }

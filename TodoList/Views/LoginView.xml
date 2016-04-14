@@ -1,56 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
   <LinearLayout android:orientation="horizontal"
-               android:layout_width="wrap_content"
+               android:layout_width="match_parent"
                android:layout_height="wrap_content">
 
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="Username"/>
     <EditText
-      android:layout_width="200dp"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       Text="{Binding Id, Mode=TwoWay, UpdateEvent=TextChanged}"/>
-    </LinearLayout>
+  </LinearLayout>
 
   <LinearLayout android:orientation="horizontal"
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="wrap_content">
 
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="Password"/>
     <EditText
-      android:layout_width="200dp"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:inputType="textPassword"
       Text="{Binding Pass, Mode=TwoWay, UpdateEvent=TextChanged}"/>
   </LinearLayout>
-  
+
   <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Remember Me" 
+        android:text="Remember Me"
         Checked="{Binding RememberChecked, Mode=TwoWay, UpdateEvent=CheckedChange}"/>
 
   <LinearLayout android:orientation="horizontal"
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="wrap_content">
     <Button
-      android:layout_width="100dp"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text="Log In"
-      Click="{Binding ButtonLogin}"/>
+      Click="{Binding ButtonLogin}"
+              android:layout_weight="1"/>
 
     <Button
-     android:layout_width="100dp"
+     android:layout_width="match_parent"
      android:layout_height="wrap_content"
      android:text="Sign Up"
-      Click="{Binding ButtonSignUp}"/>
+      Click="{Binding ButtonSignUp}"
+              android:layout_weight="1"/>
   </LinearLayout>
-  
+  <TextView
+    android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              Text="{Binding Error}"/>
+
 </LinearLayout>
 

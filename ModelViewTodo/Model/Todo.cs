@@ -1,4 +1,6 @@
-﻿namespace ModelViewTodo.Model
+﻿using Newtonsoft.Json;
+
+namespace ModelViewTodo.Model
 {
     public class Todo
     {
@@ -14,11 +16,13 @@
             Name = n;
             Description = d;
         }
-
+        [JsonProperty("title")]
         public string Name { get; set; }
 
+        [JsonProperty("description")]
         public string Description { get; set; }
 
+        [JsonProperty("id")]
         public int Index { get; set; }
 
         public override string ToString()
