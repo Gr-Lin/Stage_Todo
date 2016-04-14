@@ -15,8 +15,7 @@ namespace ModelViewTodo.ModelView
     {
         private string _title;
         private string _desc;
-
-        public ICommand ButtonBack { get; set; }
+        
         public ICommand ButtonSaveEdit { get; set; }
         public ICommand ButtonDelete { get; set; }
         public ICommand ButtonShare { get; set; }
@@ -38,7 +37,6 @@ namespace ModelViewTodo.ModelView
 
         public ObservableCollection<Todo> CollectionTodo => CollectionService.GetCollection();
         public IToastService ToastService => LazyResolver<IToastService>.Service;
-
         public ICollectionTodoService CollectionService => LazyResolver<ICollectionTodoService>.Service;
 
         public override void OnNavigatedTo(NavigationArgs e, string parametersKey)
@@ -51,7 +49,6 @@ namespace ModelViewTodo.ModelView
 
         public EditModelView()
         {
-            ButtonBack = new DelegateCommand(ButtonBackClicked);
             ButtonSaveEdit = new DelegateCommand(ButtonSaveEditAsyncClicked);
             ButtonDelete = new DelegateCommand(ButtonDeleteClicked);
             ButtonShare = new DelegateCommand(ButtonShareClicked);
@@ -75,11 +72,6 @@ namespace ModelViewTodo.ModelView
                 ToastService.DisplayToast("Todo's field can't be blank");
         }
 
-        private void ButtonBackClicked()
-        {
-            NavigationService.GoBack();
-        }
-
         protected IMessageDialogService MessageDialogService => LazyResolver<IMessageDialogService>.Service;
 
         private void ButtonDeleteClicked()
@@ -92,10 +84,10 @@ namespace ModelViewTodo.ModelView
 
         public void ButtonShareClicked()
         {
-            NavigationService.Navigate("Share"/*, new Dictionary<string, object>
+            NavigationService.Navigate("Share", new Dictionary<string, object>
             {
-                {"Todo", Index }
-            }*/);
+                {"Index", Index }
+            });
         }
     }
 }

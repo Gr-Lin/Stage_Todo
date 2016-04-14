@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
-	<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Todos" android:gravity="center" />
-	<storm.mvvm.components.BindableListView android:id="@+id/ListView" android:layout_width="match_parent" android:layout_height="wrap_content" />
-	<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
-		<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add a Todo" android:layout_weight="1" android:id="@+id/Generated_ViewElement_110" />
-		<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Edit Todo" android:layout_weight="1" android:id="@+id/Generated_ViewElement_111" />
-	</LinearLayout>
-</LinearLayout>

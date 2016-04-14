@@ -6,7 +6,7 @@ using Storm.Mvvm;
 namespace TodoList.Activities
 {
     [Activity(Label = "Share", MainLauncher = false, Icon = "@drawable/icon")]
-    public class ShareActivity : ActivityBase
+    public partial class ShareActivity : ActivityBase
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
