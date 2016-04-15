@@ -44,7 +44,7 @@ namespace TodoList
             cont.RegisterInstance<IHttpService>(new HttpService());
             cont.RegisterInstance<IUserService>(new UserService());
             cont.RegisterInstance<IToastService>(new ToastService());
-
+            cont.RegisterInstance<IShareService>(new ShareService());
         }
     }
 }

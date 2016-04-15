@@ -1,58 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp">
 
-  <LinearLayout android:orientation="horizontal"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
+  <Resources>
+    <Style Key="Padding"
+           android:layout_marginBottom="10dp"/>
+    <Style Key="TextStyle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"/>
+    <Style Key="InternalLinearLayoutStyle"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           XmlStyle="{Resource Padding}"/>
+    <Style Key="EditTextStyle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+    <Style Key="ButtonStyle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"/>
+         
+  </Resources>
+  
 
-    <TextView android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Username"/>
-    <EditText
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      Text="{Binding Id, Mode=TwoWay, UpdateEvent=TextChanged}"/>
+  <LinearLayout XmlStyle ="{Resource InternalLinearLayoutStyle}">
+
+    <TextView XmlStyle ="{Resource TextStyle}"
+              android:text="Username : "/>
+    <EditText XmlStyle ="{Resource EditTextStyle}"
+              Text="{Binding Id, Mode=TwoWay, UpdateEvent=TextChanged}"/>
+    
   </LinearLayout>
 
-  <LinearLayout android:orientation="horizontal"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content">
+  <LinearLayout XmlStyle ="{Resource InternalLinearLayoutStyle}">
 
-    <TextView android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Password"/>
-    <EditText
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:inputType="textPassword"
-      Text="{Binding Pass, Mode=TwoWay, UpdateEvent=TextChanged}"/>
+    <TextView XmlStyle ="{Resource TextStyle}"
+              android:text="Password : "/>
+    <EditText XmlStyle ="{Resource EditTextStyle}"
+              android:inputType="textPassword"
+              Text="{Binding Pass, Mode=TwoWay, UpdateEvent=TextChanged}"/>
+    
   </LinearLayout>
 
   <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        XmlStyle="{Resource Padding}"
         android:text="Remember Me"
         Checked="{Binding RememberChecked, Mode=TwoWay, UpdateEvent=CheckedChange}"/>
 
-  <LinearLayout android:orientation="horizontal"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content">
-    <Button
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Log In"
-      Click="{Binding ButtonLogin}"
-              android:layout_weight="1"/>
+  <LinearLayout XmlStyle ="{Resource InternalLinearLayoutStyle}">
+    
+    <Button XmlStyle ="{Resource ButtonStyle}"
+            android:text="Log In"
+            Click="{Binding ButtonLogin}"/>
 
-    <Button
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:text="Sign Up"
-      Click="{Binding ButtonSignUp}"
-              android:layout_weight="1"/>
+    <Button XmlStyle ="{Resource ButtonStyle}"
+            android:text="Sign Up"
+            Click="{Binding ButtonSignUp}"/>
+    
   </LinearLayout>
 
 </LinearLayout>

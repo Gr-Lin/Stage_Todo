@@ -11,7 +11,7 @@ namespace ModelViewTodo.ModelView
 {
     public class ShareViewModel : ViewModelBase
     {
-        private readonly Regex _regex = new Regex("`^0[1-9][0-9]{8}$`"); 
+        private readonly Regex _regex = new Regex("^((\\+33)|0)[1-9](.?[0-9]{2}){4}$");
         private string _phone;
         private string _message = "I'm sharing this Todo : ";
         private string _adresse;
@@ -61,8 +61,7 @@ namespace ModelViewTodo.ModelView
         {
             if (CheckNumber())
             {
-                ToastService.DisplayToast("je suis ici");
-                //ShareService.SendSms(PhoneNumber, MessageTodo);
+                ShareService.SendSms(PhoneNumber, MessageTodo);
                 NavigationService.GoBack();
             }
             else
@@ -71,13 +70,13 @@ namespace ModelViewTodo.ModelView
 
         private void ButtonMailClicked()
         {
-            //ShareService.SendMail(new string[] { EmailAdress }, "Sharing todo", MessageTodo);
+            ShareService.SendMail(new string[] { EmailAdress }, "Sharing todo", MessageTodo);
             NavigationService.GoBack();
         }
 
         public bool CheckNumber()
         {
-           return _regex.IsMatch(PhoneNumber); //ne fonctionne pas (aucune idee de pourquoi)
+           return _regex.IsMatch(PhoneNumber); 
         }
     }
     
